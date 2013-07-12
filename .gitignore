@@ -2,3 +2,4 @@
 /src/SimpleInvoice.pro.user
 /src/Makefile
 /src/build_tmp/*
+*qrc_*.cpp
