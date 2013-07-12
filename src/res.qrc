@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>res/advancedsettings.png</file>
+        <file>res/application-exit.png</file>
+        <file>res/document-new.png</file>
+        <file>res/document-open-folder.png</file>
+        <file>res/help-about.png</file>
+        <file>res/kword.png</file>
+        <file>res/agpl-3.0.txt</file>
+        <file>res/dialog-ok-apply.png</file>
+        <file>res/dialog-cancel.png</file>
+        <file>res/list-add.png</file>
+        <file>res/document-print.png</file>
+    </qresource>
+</RCC>
