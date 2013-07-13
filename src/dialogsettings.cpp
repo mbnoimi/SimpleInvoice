@@ -7,7 +7,7 @@ DialogSettings::DialogSettings(QWidget *parent) :
     ui(new Ui::DialogSettings)
 {
     ui->setupUi(this);
-    QSettings settings("GNU", "Simple Invoice");
+    QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
     ui->comboBox_language->setCurrentText(settings.value("main/lang", tr("English")).toString());
     ui->lineEdit_currency->setText(settings.value("main/currency", tr("L.D.")).toString());
 }
@@ -31,7 +31,7 @@ void DialogSettings::changeEvent(QEvent *e)
 
 void DialogSettings::on_pushButton_close_clicked()
 {
-    QSettings settings("GNU", "Simple Invoice");
+    QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
     settings.setValue("main/lang", ui->comboBox_language->currentText());
     settings.setValue("main/currency", ui->lineEdit_currency->text());
     close();

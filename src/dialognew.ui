@@ -100,13 +100,11 @@
      </item>
      <item row="4" column="1" colspan="5">
       <widget class="QDoubleSpinBox" name="doubleSpinBox_cost">
-       <property name="font">
-        <font>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Tahoma&quot;;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="buttonSymbols">
         <enum>QAbstractSpinBox::PlusMinus</enum>

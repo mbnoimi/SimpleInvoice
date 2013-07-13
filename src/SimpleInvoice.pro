@@ -8,8 +8,7 @@ QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-unix:TARGET = SimpleInvoice-lin
-win32:TARGET = SimpleInvoice-win
+TARGET = SimpleInvoice
 TEMPLATE = app
 
 
@@ -30,11 +29,20 @@ FORMS    += mainwindow.ui \
     dialognew.ui \
     dialogsettings.ui
 
-DESTDIR = ../bin
-
-MOC_DIR = build_tmp
-UI_DIR = build_tmp
-OBJECTS_DIR = build_tmp
+unix {
+    DESTDIR = ../bin/lin
+    MOC_DIR = build_tmp_lin
+    UI_DIR = build_tmp_lin
+    OBJECTS_DIR = build_tmp_lin
+    RCC_DIR = build_tmp_lin
+}
+win32 {
+    DESTDIR = ../bin/win32
+    MOC_DIR = build_tmp_win
+    UI_DIR = build_tmp_win
+    OBJECTS_DIR = build_tmp_win
+    RCC_DIR = build_tmp_win
+}
 
 RESOURCES += \
     res.qrc

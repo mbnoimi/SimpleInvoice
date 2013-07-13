@@ -127,7 +127,7 @@ void MainWindow::updateData()
         model_statues->setQuery(query_statues, _db);
         ui->comboBox_status->setModel(model_statues);
 
-        QSettings settings("GNU", "Simple Invoice");
+        QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
         QSqlQuery query(query_sum, _db);
         query.next();
         _label->setText(QString(tr("%1 : Item(s) | Sum = %2 %3"))

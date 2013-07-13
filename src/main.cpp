@@ -8,9 +8,8 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     a.setStyleSheet("* {font: 9pt \"Tahoma\";}");
 
-    QSettings settings("GNU", "Simple Invoice");
+    QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
     QString language = settings.value("main/lang", QObject::tr("English")).toString();
-
 
     QTranslator translator;
     if (language == QObject::tr("English")) {

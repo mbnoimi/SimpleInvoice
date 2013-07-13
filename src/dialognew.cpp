@@ -14,7 +14,7 @@ DialogNew::DialogNew(QSqlDatabase database, bool isForInput, QWidget *parent, in
         setWindowIcon(QIcon(":/icons/res/document-new.png"));
     else
         setWindowIcon(QIcon(":/icons/res/document-open-folder.png"));
-    QSettings settings("GNU", "Simple Invoice");
+    QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
     ui->doubleSpinBox_cost->setSuffix(" "+settings.value("main/currency", tr("L.D.")).toString());
     updateData();
 }
