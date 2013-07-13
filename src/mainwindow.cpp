@@ -103,6 +103,14 @@ void MainWindow::updateData()
     if (db.isOpen()) {
         model = new QSqlQueryModel;
         model->setQuery(query_table, db);
+        model->setHeaderData(0, Qt::Horizontal, tr("ID"));
+        model->setHeaderData(1, Qt::Horizontal, tr("Name"));
+        model->setHeaderData(2, Qt::Horizontal, tr("Device"));
+        model->setHeaderData(3, Qt::Horizontal, tr("Description"));
+        model->setHeaderData(4, Qt::Horizontal, tr("Cost"));
+        model->setHeaderData(5, Qt::Horizontal, tr("Recived"));
+        model->setHeaderData(6, Qt::Horizontal, tr("Status"));
+        model->setHeaderData(7, Qt::Horizontal, tr("Note"));
         ui->tableView->setModel(model);
         ui->tableView->resizeColumnsToContents();
         ui->tableView->resizeRowsToContents();
