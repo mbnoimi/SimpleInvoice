@@ -3,3 +3,7 @@
 /src/Makefile
 /src/build_tmp/*
 *qrc_*.cpp
+*.qm
+*.o
+*moc_*.cpp
+*ui_*.h

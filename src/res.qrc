@@ -12,4 +12,8 @@
         <file>res/list-add.png</file>
         <file>res/document-print.png</file>
     </qresource>
+    <qresource prefix="/langs">
+        <file>langs/en.qm</file>
+        <file>langs/ar.qm</file>
+    </qresource>
 </RCC>

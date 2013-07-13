@@ -42,4 +42,9 @@ OTHER_FILES += \
     ../tmp/Selection_002.jpg \
     ../tmp/Selection_003.jpg \
     ../tmp/Selection_001.jpg \
-    queries.sql
+    queries.sql \
+    langs/en.ts \
+    langs/ar.ts
+
+TRANSLATIONS += ./langs/ar.ts \
+                ./langs/en.ts
