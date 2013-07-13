@@ -1,7 +1,7 @@
 *.Debug
 *.Release
 /bin/*
-/src/*.pro.user*
+*.pro.user*
 *Makefile*
 *qrc_*.cpp
 *.qm
