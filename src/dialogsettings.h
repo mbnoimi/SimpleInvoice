@@ -2,6 +2,7 @@
 #define DIALOGSETTINGS_H
 
 #include <QDialog>
+#include <QtWidgets>
 
 namespace Ui {
 class DialogSettings;
@@ -18,6 +19,9 @@ public:
 protected:
     void changeEvent(QEvent *e);
     
+private slots:
+    void on_pushButton_close_clicked();
+
 private:
     Ui::DialogSettings *ui;
 };

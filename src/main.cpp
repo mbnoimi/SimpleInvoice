@@ -1,19 +1,25 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QTranslator>
+#include <QtWidgets>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    QSettings settings("GNU", "Simple Invoice");
+    QString language = settings.value("main/lang", QObject::tr("English")).toString();
+
+
     QTranslator translator;
-    if (QLocale::system().language() == QLocale::Arabic) {
-        translator.load(":/langs/langs/ar.qm");
-        a.installTranslator(&translator);
-        a.setLayoutDirection(Qt::RightToLeft);
-    } else {
+    if (language == QObject::tr("English")) {
         translator.load(":/langs/langs/en.qm");
         a.installTranslator(&translator);
         a.setLayoutDirection(Qt::LeftToRight);
+    } else {
+        translator.load(":/langs/langs/ar.qm");
+        a.installTranslator(&translator);
+        a.setLayoutDirection(Qt::RightToLeft);
     }
 
     MainWindow w;

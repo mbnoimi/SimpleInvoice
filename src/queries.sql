@@ -49,8 +49,7 @@ data.id DESC
 /**** ADD ****/
 INSERT INTO "main"."data" ("title", "device", "description", "cost", "recived", "note", "model", "serial", "sent", "phone", "status") VALUES ('%1', '%2', '%3', '%4', '%5', '%6', '%7', '%8', '%9', '%10', '%11')
 
-
-/**** UPDATE ****/
+/**** UPDATE LOAD ****/
 SELECT
 data.id,
 data.title,
@@ -68,3 +67,9 @@ FROM
 data
 WHERE
 data.id = 1
+
+/**** UPDATE LOAD ****/
+UPDATE "main"."data" SET "title"='%1', "device"='%2', "description"='%3', "cost"='%4', "recived"='%5', "note"='%6', "model"='%7', "serial"='%8', "sent"='%9', "phone"='%10', "status"='%11' WHERE ("id"='%12')
+
+/**** DELETE ****/
+DELETE FROM "main"."data" WHERE ("id"=3)

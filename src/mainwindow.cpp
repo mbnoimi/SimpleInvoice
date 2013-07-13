@@ -12,8 +12,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    connection();
     ui->dateEdit_date->setDate(QDate::currentDate());
+    // BUG: RTL issue!
+    _label = new QLabel;
+    ui->statusBar->addPermanentWidget(_label);
+    _label->show();
+    connection();
 }
 
 MainWindow::~MainWindow()
@@ -42,18 +46,18 @@ void MainWindow::on_actionNew_triggered()
 
 void MainWindow::on_actionOpen_triggered()
 {
-    QSqlRecord record = model->record(ui->tableView->currentIndex().row());
-    qDebug() << ui->tableView->currentIndex().data().toString()
-             << record.value("name");
-//    DialogNew dlg(db, 0, this);
-//    dlg.exec();
-//    updateData();
+    DialogNew dlg(db,
+                  0,
+                  this,
+                  model->record(ui->tableView->currentIndex().row()).value("id").toInt());
+    dlg.exec();
+    updateData();
 }
 
 void MainWindow::on_actionSettings_triggered()
 {
-    /* DialogSettings dlg;
-    dlg.exec()*/;
+    DialogSettings dlg;
+    dlg.exec();
 }
 
 void MainWindow::on_actionExit_triggered()
@@ -122,14 +126,18 @@ void MainWindow::updateData()
         model_statues = new QSqlQueryModel;
         model_statues->setQuery(query_statues, db);
         ui->comboBox_status->setModel(model_statues);
+
+        QSettings settings("GNU", "Simple Invoice");
+        _label->setText(QString(tr("%1 : Item(s) | Sum = %2 %3"))
+                        .arg(model->rowCount())
+                        .arg("0000")
+                        .arg(settings.value("main/currency", tr("L.D.")).toString()));
     }
 }
 
 void MainWindow::on_toolButton_cancel_clicked()
 {
-    model->setQuery(query_table);
-    ui->tableView->resizeColumnsToContents();
-    ui->tableView->resizeRowsToContents();
+    updateData();
 }
 
 void MainWindow::on_toolButton_apply_clicked()
@@ -162,11 +170,12 @@ void MainWindow::on_toolButton_apply_clicked()
     model->setQuery(query);
     ui->tableView->resizeColumnsToContents();
     ui->tableView->resizeRowsToContents();
+    _label->setText(QString(tr("%1 : Item(s)")).arg(model->rowCount()));
 }
 
 void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 {
-
+    on_actionOpen_triggered();
 }
 
 void MainWindow::on_actionPrint_triggered()

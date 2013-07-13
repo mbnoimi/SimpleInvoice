@@ -43,11 +43,13 @@ private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
     QSqlQueryModel *model, *model_devices, *model_statues;
+    QLabel *_label;
 
     void connection();
     bool isOpen();
     QString dbPath();
     void updateData();
+
 };
 
 #endif // MAINWINDOW_H

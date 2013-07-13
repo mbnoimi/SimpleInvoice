@@ -75,7 +75,10 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Phone</string>
+        <string>Phone:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_phone</cstring>
        </property>
       </widget>
      </item>
@@ -155,7 +158,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Recived at:</string>
+        <string>Recived:</string>
        </property>
        <property name="buddy">
         <cstring>dateEdit_recived</cstring>
@@ -187,7 +190,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Delivered at:</string>
+        <string>Delivered:</string>
        </property>
        <property name="buddy">
         <cstring>dateEdit_delivered</cstring>
@@ -218,6 +221,9 @@
        </property>
        <property name="text">
         <string>Model:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_model</cstring>
        </property>
       </widget>
      </item>
@@ -311,6 +317,17 @@
        </spacer>
       </item>
       <item>
+       <widget class="QPushButton" name="pushButton_delete">
+        <property name="text">
+         <string>Delete</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/icons/res/edit-delete.png</normaloff>:/icons/res/edit-delete.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="pushButton_add">
         <property name="text">
          <string>Add New</string>
@@ -337,6 +354,9 @@
          <iconset resource="res.qrc">
           <normaloff>:/icons/res/dialog-ok-apply.png</normaloff>:/icons/res/dialog-ok-apply.png</iconset>
         </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -358,12 +378,18 @@
  <tabstops>
   <tabstop>lineEdit_name</tabstop>
   <tabstop>comboBox_status</tabstop>
+  <tabstop>lineEdit_phone</tabstop>
   <tabstop>dateEdit_recived</tabstop>
   <tabstop>comboBox_device</tabstop>
+  <tabstop>lineEdit_model</tabstop>
   <tabstop>lineEdit_serial</tabstop>
   <tabstop>plainTextEdit_description</tabstop>
   <tabstop>doubleSpinBox_cost</tabstop>
   <tabstop>plainTextEdit_note</tabstop>
+  <tabstop>pushButton_add</tabstop>
+  <tabstop>pushButton_ok</tabstop>
+  <tabstop>pushButton_cancel</tabstop>
+  <tabstop>pushButton_delete</tabstop>
   <tabstop>dateEdit_delivered</tabstop>
  </tabstops>
  <resources>

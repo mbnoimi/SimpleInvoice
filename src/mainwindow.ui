@@ -17,6 +17,11 @@
    <iconset resource="res.qrc">
     <normaloff>:/icons/res/kword.png</normaloff>:/icons/res/kword.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QTabWidget::tab-bar {
+    alignment: center;
+}</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <property name="leftMargin">
@@ -258,6 +263,7 @@
    <addaction name="actionAbout"/>
    <addaction name="actionExit"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNew">
    <property name="icon">
     <iconset resource="res.qrc">
