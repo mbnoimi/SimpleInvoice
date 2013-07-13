@@ -1,13 +1,8 @@
-/src/Makefile.Debug
-/src/Makefile.Release
-/src/SimpleInvoice.pro.user.3f48197
-/src/SimpleInvoice.pro.user.aec3782
-/src/object_script.SimpleInvoice.Debug
-/src/object_script.SimpleInvoice.Release
+*.Debug
+*.Release
 /bin/*
-/src/SimpleInvoice.pro.user
-/src/Makefile
-/src/build_tmp/*
+/src/*.pro.user*
+*Makefile*
 *qrc_*.cpp
 *.qm
 *.o
