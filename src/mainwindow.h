@@ -41,7 +41,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QSqlDatabase db;
+    QSqlDatabase _db;
     QSqlQueryModel *model, *model_devices, *model_statues;
     QLabel *_label;
 

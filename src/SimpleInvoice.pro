@@ -8,7 +8,8 @@ QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = SimpleInvoice
+unix:TARGET = SimpleInvoice-lin
+win32:TARGET = SimpleInvoice-win
 TEMPLATE = app
 
 

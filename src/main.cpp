@@ -6,6 +6,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    a.setStyleSheet("* {font: 9pt \"Tahoma\";}");
 
     QSettings settings("GNU", "Simple Invoice");
     QString language = settings.value("main/lang", QObject::tr("English")).toString();

@@ -39,14 +39,14 @@ void MainWindow::changeEvent(QEvent *e)
 
 void MainWindow::on_actionNew_triggered()
 {
-    DialogNew dlg(db, 1, this);
+    DialogNew dlg(_db, 1, this);
     dlg.exec();
     updateData();
 }
 
 void MainWindow::on_actionOpen_triggered()
 {
-    DialogNew dlg(db,
+    DialogNew dlg(_db,
                   0,
                   this,
                   model->record(ui->tableView->currentIndex().row()).value("id").toInt());
@@ -76,13 +76,13 @@ void MainWindow::on_actionAbout_triggered()
 
 void MainWindow::connection()
 {
-    db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName(dbPath());
+    _db = QSqlDatabase::addDatabase("QSQLITE");
+    _db.setDatabaseName(dbPath());
     if (!isOpen()) {
         QMessageBox::critical(this, tr("Error!"), tr("Unable to connect to the database!"));
         on_actionExit_triggered();
     } else {
-        db.open();
+        _db.open();
         updateData();
     }
 }
@@ -104,9 +104,9 @@ QString MainWindow::dbPath()
 
 void MainWindow::updateData()
 {
-    if (db.isOpen()) {
+    if (_db.isOpen()) {
         model = new QSqlQueryModel;
-        model->setQuery(query_table, db);
+        model->setQuery(query_table, _db);
         model->setHeaderData(0, Qt::Horizontal, tr("ID"));
         model->setHeaderData(1, Qt::Horizontal, tr("Name"));
         model->setHeaderData(2, Qt::Horizontal, tr("Device"));
@@ -120,17 +120,19 @@ void MainWindow::updateData()
         ui->tableView->resizeRowsToContents();
 
         model_devices = new QSqlQueryModel;
-        model_devices->setQuery(query_devices, db);
+        model_devices->setQuery(query_devices, _db);
         ui->comboBox_device->setModel(model_devices);
 
         model_statues = new QSqlQueryModel;
-        model_statues->setQuery(query_statues, db);
+        model_statues->setQuery(query_statues, _db);
         ui->comboBox_status->setModel(model_statues);
 
         QSettings settings("GNU", "Simple Invoice");
+        QSqlQuery query(query_sum, _db);
+        query.next();
         _label->setText(QString(tr("%1 : Item(s) | Sum = %2 %3"))
                         .arg(model->rowCount())
-                        .arg("0000")
+                        .arg(query.value(0).toString())
                         .arg(settings.value("main/currency", tr("L.D.")).toString()));
     }
 }

@@ -20,7 +20,8 @@
   <property name="styleSheet">
    <string notr="true">QTabWidget::tab-bar {
     alignment: center;
-}</string>
+}
+</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">

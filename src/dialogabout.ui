@@ -34,16 +34,8 @@
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="1">
       <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <family>Tahoma</family>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
        <property name="text">
-        <string>Simple Invoice</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Simple Invoice&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>

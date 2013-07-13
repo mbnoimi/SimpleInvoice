@@ -73,3 +73,9 @@ UPDATE "main"."data" SET "title"='%1', "device"='%2', "description"='%3', "cost"
 
 /**** DELETE ****/
 DELETE FROM "main"."data" WHERE ("id"=3)
+
+/**** SUM ****/
+SELECT
+Sum(data.cost)
+FROM
+data

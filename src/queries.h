@@ -69,4 +69,9 @@ const QString query_update_load = "SELECT\n"
         "data.id = %1";
 const QString query_delete = "DELETE FROM \"main\".\"data\" WHERE (\"id\"=%1)";
 
+const QString query_sum = "SELECT\n"
+        "Sum(data.cost)\n"
+        "FROM\n"
+        "data";
+
 #endif // QUERIES_H

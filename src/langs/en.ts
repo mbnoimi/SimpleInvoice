@@ -5,37 +5,37 @@
     <name>DialogAbout</name>
     <message>
         <location filename="../dialogabout.ui" line="26"/>
-        <location filename="../dialogabout.ui" line="82"/>
+        <location filename="../dialogabout.ui" line="74"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="46"/>
-        <source>Simple Invoice</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogabout.ui" line="100"/>
+        <location filename="../dialogabout.ui" line="92"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Created by:&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Muhammad Bashir Al-Noimi&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;mailtto:mbnoimi@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mbnoimi@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="835"/>
+        <location filename="../dialogabout.ui" line="827"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="111"/>
+        <location filename="../dialogabout.ui" line="103"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="53"/>
+        <location filename="../dialogabout.ui" line="38"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Simple Invoice&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogabout.ui" line="45"/>
         <source>Version 1.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="135"/>
+        <location filename="../dialogabout.ui" line="127"/>
         <source>                    GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
@@ -816,11 +816,11 @@ For more information on this, and how to apply and follow the GNU AGPL, see
     </message>
     <message>
         <location filename="../dialognew.cpp" line="72"/>
-        <location filename="../dialognew.cpp" line="124"/>
-        <location filename="../dialognew.cpp" line="128"/>
-        <location filename="../dialognew.cpp" line="149"/>
-        <location filename="../dialognew.cpp" line="153"/>
-        <location filename="../dialognew.cpp" line="163"/>
+        <location filename="../dialognew.cpp" line="125"/>
+        <location filename="../dialognew.cpp" line="129"/>
+        <location filename="../dialognew.cpp" line="150"/>
+        <location filename="../dialognew.cpp" line="154"/>
+        <location filename="../dialognew.cpp" line="164"/>
         <source>Error!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -830,33 +830,33 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="124"/>
-        <location filename="../dialognew.cpp" line="149"/>
+        <location filename="../dialognew.cpp" line="125"/>
+        <location filename="../dialognew.cpp" line="150"/>
         <source>Unable to save the data to the database!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="128"/>
+        <location filename="../dialognew.cpp" line="129"/>
         <source>Missing name of invalid date!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="153"/>
+        <location filename="../dialognew.cpp" line="154"/>
         <source>You need to input name of the invoice at least!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="159"/>
+        <location filename="../dialognew.cpp" line="160"/>
         <source>Question</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="159"/>
+        <location filename="../dialognew.cpp" line="160"/>
         <source>Do you want to delete this item?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="163"/>
+        <location filename="../dialognew.cpp" line="164"/>
         <source>Unable to delete the item!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -909,110 +909,110 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="67"/>
+        <location filename="../mainwindow.ui" line="68"/>
         <source>Filters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="98"/>
+        <location filename="../mainwindow.ui" line="99"/>
         <source>&amp;Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="104"/>
+        <location filename="../mainwindow.ui" line="105"/>
         <source>Type a name...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="112"/>
+        <location filename="../mainwindow.ui" line="113"/>
         <source>&amp;ID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="126"/>
+        <location filename="../mainwindow.ui" line="127"/>
         <source>Da&amp;te</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="132"/>
+        <location filename="../mainwindow.ui" line="133"/>
         <source>yyyy/MM/dd</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="147"/>
+        <location filename="../mainwindow.ui" line="148"/>
         <source>&amp;Device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="157"/>
+        <location filename="../mainwindow.ui" line="158"/>
         <source>&amp;Status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="185"/>
-        <location filename="../mainwindow.ui" line="202"/>
+        <location filename="../mainwindow.ui" line="186"/>
+        <location filename="../mainwindow.ui" line="203"/>
         <source>...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="228"/>
+        <location filename="../mainwindow.ui" line="229"/>
         <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="240"/>
+        <location filename="../mainwindow.ui" line="241"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="273"/>
+        <location filename="../mainwindow.ui" line="274"/>
         <source>New</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="276"/>
+        <location filename="../mainwindow.ui" line="277"/>
         <source>Ctrl+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="285"/>
+        <location filename="../mainwindow.ui" line="286"/>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="288"/>
+        <location filename="../mainwindow.ui" line="289"/>
         <source>Ctrl+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="297"/>
-        <location filename="../mainwindow.ui" line="300"/>
+        <location filename="../mainwindow.ui" line="298"/>
+        <location filename="../mainwindow.ui" line="301"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="303"/>
+        <location filename="../mainwindow.ui" line="304"/>
         <source>Ctrl+Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="312"/>
-        <location filename="../mainwindow.ui" line="315"/>
+        <location filename="../mainwindow.ui" line="313"/>
+        <location filename="../mainwindow.ui" line="316"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="324"/>
+        <location filename="../mainwindow.ui" line="325"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="333"/>
+        <location filename="../mainwindow.ui" line="334"/>
         <source>print</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="336"/>
+        <location filename="../mainwindow.ui" line="337"/>
         <source>Ctrl+P</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1085,13 +1085,9 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="11"/>
+        <location filename="../main.cpp" line="12"/>
+        <location filename="../main.cpp" line="16"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="15"/>
-        <source>Arabic</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -5,17 +5,16 @@
     <name>DialogAbout</name>
     <message>
         <location filename="../dialogabout.ui" line="26"/>
-        <location filename="../dialogabout.ui" line="82"/>
+        <location filename="../dialogabout.ui" line="74"/>
         <source>About</source>
         <translation>حول</translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="46"/>
         <source>Simple Invoice</source>
-        <translation>Simple Invoice</translation>
+        <translation type="obsolete">Simple Invoice</translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="53"/>
+        <location filename="../dialogabout.ui" line="45"/>
         <source>Version 1.0</source>
         <translation>إصدار 1.0</translation>
     </message>
@@ -24,12 +23,17 @@
         <translation type="obsolete">1.0</translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="100"/>
+        <location filename="../dialogabout.ui" line="38"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Simple Invoice&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Simple Invoice&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../dialogabout.ui" line="92"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Created by:&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Muhammad Bashir Al-Noimi&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;mailtto:mbnoimi@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mbnoimi@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html dir=&quot;rtl&quot;&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;برمجة و تنفيذ:&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;محمد بشير النعيمي&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;mailtto:mbnoimi@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mbnoimi@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="835"/>
+        <location filename="../dialogabout.ui" line="827"/>
         <source>Close</source>
         <translation>إغلاق</translation>
     </message>
@@ -38,12 +42,12 @@
         <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;محمد بشير النعيمي&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;mailtto:mbnoimi@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mbnoimi@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="111"/>
+        <location filename="../dialogabout.ui" line="103"/>
         <source>License</source>
         <translation>ترخيص</translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="135"/>
+        <location filename="../dialogabout.ui" line="127"/>
         <source>                    GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
@@ -1497,11 +1501,11 @@ For more information on this, and how to apply and follow the GNU AGPL, see
     </message>
     <message>
         <location filename="../dialognew.cpp" line="72"/>
-        <location filename="../dialognew.cpp" line="124"/>
-        <location filename="../dialognew.cpp" line="128"/>
-        <location filename="../dialognew.cpp" line="149"/>
-        <location filename="../dialognew.cpp" line="153"/>
-        <location filename="../dialognew.cpp" line="163"/>
+        <location filename="../dialognew.cpp" line="125"/>
+        <location filename="../dialognew.cpp" line="129"/>
+        <location filename="../dialognew.cpp" line="150"/>
+        <location filename="../dialognew.cpp" line="154"/>
+        <location filename="../dialognew.cpp" line="164"/>
         <source>Error!</source>
         <translation>خطأ!</translation>
     </message>
@@ -1511,33 +1515,33 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation>غير قادر على فتح المدخلات من قاعدة البيانات!</translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="124"/>
-        <location filename="../dialognew.cpp" line="149"/>
+        <location filename="../dialognew.cpp" line="125"/>
+        <location filename="../dialognew.cpp" line="150"/>
         <source>Unable to save the data to the database!</source>
         <translation>غير قادر على حفظ المدخلات لقاعدة البيانات!</translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="128"/>
+        <location filename="../dialognew.cpp" line="129"/>
         <source>Missing name of invalid date!</source>
         <translation>اسم مفقود أو تاريخ غير صالح!</translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="153"/>
+        <location filename="../dialognew.cpp" line="154"/>
         <source>You need to input name of the invoice at least!</source>
         <translation>أنت بحاجة لإدخال اسم الفاتورة على الأقل!</translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="159"/>
+        <location filename="../dialognew.cpp" line="160"/>
         <source>Question</source>
         <translation>سؤال</translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="159"/>
+        <location filename="../dialognew.cpp" line="160"/>
         <source>Do you want to delete this item?</source>
         <translation>هل تريد حذف هذا البند؟</translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="163"/>
+        <location filename="../dialognew.cpp" line="164"/>
         <source>Unable to delete the item!</source>
         <translation>غير قادر على حذف البند!</translation>
     </message>
@@ -1594,110 +1598,110 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation>Simple Invoice</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="67"/>
+        <location filename="../mainwindow.ui" line="68"/>
         <source>Filters</source>
         <translation>مرشحات</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="98"/>
+        <location filename="../mainwindow.ui" line="99"/>
         <source>&amp;Name</source>
         <translation>&amp;اسم</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="104"/>
+        <location filename="../mainwindow.ui" line="105"/>
         <source>Type a name...</source>
         <translation>اكتب اسماً...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="112"/>
+        <location filename="../mainwindow.ui" line="113"/>
         <source>&amp;ID</source>
         <translation>&amp;معرّف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="126"/>
+        <location filename="../mainwindow.ui" line="127"/>
         <source>Da&amp;te</source>
         <translation>&amp;تاريخ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="132"/>
+        <location filename="../mainwindow.ui" line="133"/>
         <source>yyyy/MM/dd</source>
         <translation>yyyy/MM/dd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="147"/>
+        <location filename="../mainwindow.ui" line="148"/>
         <source>&amp;Device</source>
         <translation>&amp;جهاز</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="157"/>
+        <location filename="../mainwindow.ui" line="158"/>
         <source>&amp;Status</source>
         <translation>&amp;حالة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="185"/>
-        <location filename="../mainwindow.ui" line="202"/>
+        <location filename="../mainwindow.ui" line="186"/>
+        <location filename="../mainwindow.ui" line="203"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="228"/>
+        <location filename="../mainwindow.ui" line="229"/>
         <source>File</source>
         <translation>ملف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="240"/>
+        <location filename="../mainwindow.ui" line="241"/>
         <source>Help</source>
         <translation>مساعدة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="273"/>
+        <location filename="../mainwindow.ui" line="274"/>
         <source>New</source>
         <translation>جديد</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="276"/>
+        <location filename="../mainwindow.ui" line="277"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="285"/>
+        <location filename="../mainwindow.ui" line="286"/>
         <source>Open</source>
         <translation>فتح</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="288"/>
+        <location filename="../mainwindow.ui" line="289"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="297"/>
-        <location filename="../mainwindow.ui" line="300"/>
+        <location filename="../mainwindow.ui" line="298"/>
+        <location filename="../mainwindow.ui" line="301"/>
         <source>Exit</source>
         <translation>خروج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="303"/>
+        <location filename="../mainwindow.ui" line="304"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="312"/>
-        <location filename="../mainwindow.ui" line="315"/>
+        <location filename="../mainwindow.ui" line="313"/>
+        <location filename="../mainwindow.ui" line="316"/>
         <source>Settings</source>
         <translation>إعدادات</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="324"/>
+        <location filename="../mainwindow.ui" line="325"/>
         <source>About</source>
         <translation>حول</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="333"/>
+        <location filename="../mainwindow.ui" line="334"/>
         <source>print</source>
         <translation>طباعة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="336"/>
+        <location filename="../mainwindow.ui" line="337"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
@@ -1770,14 +1774,14 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="11"/>
+        <location filename="../main.cpp" line="12"/>
+        <location filename="../main.cpp" line="16"/>
         <source>English</source>
         <translation>English</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="15"/>
         <source>Arabic</source>
-        <translation>عربي</translation>
+        <translation type="obsolete">عربي</translation>
     </message>
 </context>
 </TS>
