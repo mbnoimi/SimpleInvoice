@@ -137,6 +137,36 @@ void MainWindow::updateData()
     }
 }
 
+void MainWindow::print(int id, QString filePath)
+{
+    // TODO:
+    QDir::setCurrent(qApp->applicationDirPath()+"/OpenRPT");
+            qDebug() << "CurrentPath:" << QDir::currentPath();
+
+    QStringList args;
+    args << "-databaseURL=\"QSQLITE:///../database.db\""
+         << "-noAuth"
+         << "-close"
+         << QString("-Param=invoice_id:string='%1'").arg(id)
+         << "./reports/report.xml";
+
+    if (filePath.isEmpty()) {
+        args << "-print";
+    } else {
+        args << "-pdf"
+             << QString("-outpdf=\"%1\"").arg(filePath);
+    }
+    if (!QProcess::startDetached(
+            #ifdef Q_OS_WIN
+                "./rptrender.bat"
+            #else
+                "./rptrender.sh"
+            #endif
+                , args)) {
+        QMessageBox::critical(this, tr("Error!"), tr("Unable to load OpenRPT!"));
+    }
+}
+
 void MainWindow::on_toolButton_cancel_clicked()
 {
     updateData();
@@ -182,5 +212,18 @@ void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 
 void MainWindow::on_actionPrint_triggered()
 {
+    int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
+    if (id > 0) {
+        print(id);
+    }
 
+}
+
+void MainWindow::on_actionSaveAsPDF_triggered()
+{
+    int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
+    QString pdfPath = QFileDialog::getSaveFileName(this, tr("Select PDF path..."), ".", tr("PDF (*.pdf)"));
+    if (id > 0 && !pdfPath.isEmpty()) {
+        print(id, pdfPath);
+    }
 }

@@ -79,7 +79,6 @@ void DialogNew::updateData()
             ui->lineEdit_serial->setText(qQuery.value("serial").toString());
             ui->comboBox_device->setCurrentText(qQuery.value("device").toString());
             ui->comboBox_status->setCurrentText(qQuery.value("status").toString());
-            // BUG: RTL issue
             ui->plainTextEdit_description->setPlainText(qQuery.value("description").toString());
             ui->plainTextEdit_note->setPlainText(qQuery.value("note").toString());
             ui->doubleSpinBox_cost->setValue(qQuery.value("cost").toDouble());

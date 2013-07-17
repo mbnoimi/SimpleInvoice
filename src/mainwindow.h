@@ -39,6 +39,8 @@ private slots:
 
     void on_actionPrint_triggered();
 
+    void on_actionSaveAsPDF_triggered();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase _db;
@@ -49,7 +51,7 @@ private:
     bool isOpen();
     QString dbPath();
     void updateData();
-
+    void print(int id, QString filePath="");
 };
 
 #endif // MAINWINDOW_H
