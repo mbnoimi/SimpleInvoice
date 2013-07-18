@@ -1,0 +1,13 @@
+*.o
+*.exe
+*Makefile
+*moc_*.cpp
+*ui_*.h
+*qrc_*.cpp
+*.so
+*.so.*
+*.a
+*.qm
+*.pro.user*
+distro
+bin
