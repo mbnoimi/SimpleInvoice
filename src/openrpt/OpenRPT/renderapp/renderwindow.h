@@ -24,7 +24,6 @@
 #include <QMainWindow>
 #include <QMap>
 #include <QDomComment>
-// FIXME: Should work because it already included in INCLUDEPATH
 #include <parameter.h>
 
 

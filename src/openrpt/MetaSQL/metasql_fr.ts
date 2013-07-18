@@ -2,436 +2,28 @@
 <!DOCTYPE TS>
 <TS version="2.0" language="fr">
 <context>
-    <name>GraphWindow</name>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="30"/>
-        <source>Graph Window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="102"/>
-        <source>Labels</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="114"/>
-        <source>Data:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="127"/>
-        <source>Title:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="140"/>
-        <source>Value:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="186"/>
-        <source>Padding (in pixels)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="198"/>
-        <source>Vertical:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="211"/>
-        <source>Horizontal:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="253"/>
-        <source>Value Range</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="265"/>
-        <source>Max:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="278"/>
-        <source>Min:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="329"/>
-        <source>Clear All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="340"/>
-        <source>Graph Style</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="352"/>
-        <source>Bars</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="362"/>
-        <source>Lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="369"/>
-        <source>Points</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="393"/>
-        <source>Number of Sets:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="419"/>
-        <source>Number of References:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="462"/>
-        <source>Label</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="485"/>
-        <source>Populate with SQL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="524"/>
-        <source>Execute</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ImportWindow</name>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="30"/>
-        <location filename="importmql_gui/importwindow.cpp" line="100"/>
-        <source>MetaSQL Import Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="45"/>
-        <source>Import into schema:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="70"/>
-        <source>MetaSQL Files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="85"/>
-        <location filename="importmql_gui/importwindow.ui" line="240"/>
-        <location filename="importmql_gui/importwindow.ui" line="243"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="58"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="216"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="219"/>
-        <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="88"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="61"/>
-        <source>Alt+A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="95"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="68"/>
-        <source>Remove</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="112"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="85"/>
-        <source>&amp;Import</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="115"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="88"/>
-        <source>Alt+I</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="138"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="111"/>
-        <source>Select All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="150"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="123"/>
-        <source>Messages</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="179"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="155"/>
-        <source>&amp;File</source>
-        <translation type="unfinished">&amp;Fichier</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="187"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="163"/>
-        <source>&amp;Help</source>
-        <translation type="unfinished">&amp;Aide</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="199"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="175"/>
-        <source>&amp;Contents...</source>
-        <translation type="unfinished">&amp;Contenu...</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="202"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="178"/>
-        <source>Contents</source>
-        <translation type="unfinished">Contenu</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="210"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="186"/>
-        <source>&amp;Index...</source>
-        <translation type="unfinished">&amp;Index...</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="213"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="189"/>
-        <source>Index</source>
-        <translation type="unfinished">Index</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="221"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="197"/>
-        <source>&amp;About</source>
-        <translation type="unfinished">&amp;A Propos</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="224"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="200"/>
-        <source>About</source>
-        <translation type="unfinished">A propos</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.ui" line="232"/>
-        <location filename="importmql_gui/importwindow.ui" line="235"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="208"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="211"/>
-        <source>E&amp;xit</source>
-        <translation type="unfinished">&amp;Quitter</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="63"/>
-        <source>&lt;font color=red&gt;The following error was encountered retrieving available schemas:
-	%1
-	%2
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="88"/>
-        <location filename="importmql_gui/importwindow.cpp" line="94"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="73"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="79"/>
-        <source>Not Yet Implemented</source>
-        <translation type="unfinished">Pas encore implémenté</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="88"/>
-        <location filename="importmql_gui/importwindow.cpp" line="94"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="73"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="79"/>
-        <source>This function has not been implemented.</source>
-        <translation type="unfinished">Cette fonction n&apos;a pas été implémentée.</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="101"/>
-        <source>%1 version %2
-%3, All Rights Reserved
-Build: %4
-
-%5 is a tool for importing MetaSQL files into a database.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="116"/>
-        <source>Select one or more MetaSQL files to open</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="117"/>
-        <source>MetSQL (*.mql)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="137"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="123"/>
-        <source>Import Started...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="141"/>
-        <source>No Reports Selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="142"/>
-        <source>You have not selected any reports to import. Would you like to select all loaded reports now?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="154"/>
-        <source>&lt;font color=red&gt;The following error was encountered disabling the trigger:
-	%1
-	%2
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="198"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="190"/>
-        <source>&lt;font color=red&gt;The following error was encountered while trying to import %1 into the database:
-	%2
-	%3
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="211"/>
-        <source>The saveMetasql stored procedure failed for %1, returning %2.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="215"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="197"/>
-        <source>Import successful of %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="218"/>
-        <source>No results returned from query for %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="222"/>
-        <source>&lt;font color=orange&gt;The document %1 does not have a name and/or group defined
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="226"/>
-        <source>&lt;font color=red&gt;Error reading file %1 or file was empty
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="230"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="212"/>
-        <source>&lt;font color=red&gt;Could not open the specified file: %1
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="239"/>
-        <source>&lt;font color=red&gt;The following error was encountered re-enabling the trigger:
-	%1
-	%2
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/importwindow.cpp" line="244"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="218"/>
-        <source>Import complete!
-
-
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="30"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="85"/>
-        <source>Report Import Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="37"/>
-        <source>Reports</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="86"/>
-        <source>%1 version %2
-%3, All Rights Reserved
-Build: %4
-
-%5 is a tool for importing report definition files into a database.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="102"/>
-        <source>Select one or more reports to open</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="103"/>
-        <source>Report Definitions (*.xml)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="200"/>
-        <source>&lt;font color=orange&gt;The document %1 does not have a report name defined
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="204"/>
-        <source>&lt;font color=red&gt;XML Document %1 does not have root node of report
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="208"/>
-        <source>&lt;font color=red&gt;Error parsing file %1: %2 on line %3 column %4
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="242"/>
-        <source>Edit Grade</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="242"/>
-        <source>Grade: </source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>LogOutput</name>
     <message>
+        <location filename="logoutput.ui" line="30"/>
         <source>Log Output</source>
-        <translation type="obsolete">Journal</translation>
+        <translation>Journal</translation>
     </message>
 </context>
 <context>
     <name>MQLEdit</name>
     <message>
+        <location filename="mqledit.cpp" line="257"/>
+        <location filename="mqledit.cpp" line="263"/>
+        <location filename="mqledit.cpp" line="269"/>
         <source>Not Yet Implemented</source>
-        <translation type="obsolete">Pas encore implémenté</translation>
+        <translation>Pas encore implémenté</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="258"/>
+        <location filename="mqledit.cpp" line="264"/>
+        <location filename="mqledit.cpp" line="270"/>
         <source>This function has not been implemented.</source>
-        <translation type="obsolete">Cette fonction n&apos;a pas été implémentée.</translation>
+        <translation>Cette fonction n&apos;a pas été implémentée.</translation>
     </message>
     <message>
         <source>About MetaSQL Editor</source>
@@ -446,445 +38,658 @@ Build: %4
         <translation type="obsolete">A propos de l&apos;éditeur MetaSQL version 3.3.0</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="102"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="196"/>
+        <source>Database only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="197"/>
+        <source>File only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="198"/>
+        <source>Database and File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="275"/>
+        <source>About %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="276"/>
+        <source>%1 version %2
+%3
+Build: %4
+
+%5 is a tool for editing and testing MetaSQL statements.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="295"/>
         <source>Document Modified!</source>
-        <translation type="obsolete">Document modifié!</translation>
+        <translation>Document modifié!</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="296"/>
         <source>Would you like to save your changes before continuing?</source>
-        <translation type="obsolete">Voulez-vous enregistrer vos modifications avant de continuer ?</translation>
+        <translation>Voulez-vous enregistrer vos modifications avant de continuer ?</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="309"/>
         <source>Warning</source>
-        <translation type="obsolete">Avertissement</translation>
+        <translation>Avertissement</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="310"/>
         <source>Encountered an unknown response. No action will be taken.</source>
-        <translation type="obsolete">J&apos;ai rencontré une réponse inconnue. Aucune action ne sera effectuée.</translation>
+        <translation>J&apos;ai rencontré une réponse inconnue. Aucune action ne sera effectuée.</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="327"/>
         <source>No file Specified</source>
-        <translation type="obsolete">Pas de fichier spécifié</translation>
+        <translation>Pas de fichier spécifié</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="328"/>
         <source>No file was specified to save to.</source>
-        <translation type="obsolete">Pas de fichier spécifié pour l&apos;enregistrement.</translation>
+        <translation>Pas de fichier spécifié pour l&apos;enregistrement.</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="340"/>
         <source>Error Saving file</source>
-        <translation type="obsolete">Erreur à l&apos;enregistrement du fichier</translation>
+        <translation>Erreur à l&apos;enregistrement du fichier</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="341"/>
         <source>There was an error while trying to save the file.</source>
-        <translation type="obsolete">Erreur à l&apos;enregistrement du fichier.</translation>
+        <translation>Erreur à l&apos;enregistrement du fichier.</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="360"/>
+        <source>Save MetaSQL File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="362"/>
+        <source>MetaSQL Files (*.mql);;Text Files (*.txt)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="369"/>
+        <location filename="mqledit.cpp" line="880"/>
+        <source>[*]%1 - File: %2 (%3)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="476"/>
+        <location filename="mqledit.cpp" line="562"/>
+        <location filename="mqledit.cpp" line="629"/>
+        <source>Database Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="477"/>
+        <source>&lt;p&gt;Trying to read the MetaSQL statement, the database server returned an error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="484"/>
+        <source>Not Found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="485"/>
+        <source>&lt;p&gt;Could not find the MetaSQL statement with id %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="563"/>
+        <source>&lt;p&gt;There was a problem saving the MetaSQL statement. Only database administrators may change grade 0 statements. Either %1 and choose a different grade or log in as a database administrator to make your changes.&lt;/p&gt;&lt;pre&gt;%2&lt;/pre&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="603"/>
+        <source>Save to %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="604"/>
+        <source>&lt;p&gt;Do you also want to save this MetaSQL statement to %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="614"/>
+        <location filename="mqledit.cpp" line="620"/>
+        <source>Could not save MetaSQL statement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="615"/>
+        <source>&lt;p&gt;Trying to save the MetaSQL statement, saveMetasql returned the error code %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="621"/>
+        <source>&lt;p&gt;Trying to save the MetaSQL statement, the database server returned an error: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="630"/>
+        <source>&lt;p&gt;There was a problem resetting triggers.Please manually enable the %1 trigger on the %2 table.&lt;/p&gt;&lt;pre&gt;%3&lt;/pre&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="656"/>
+        <location filename="mqledit.cpp" line="682"/>
         <source>---- Parsing Query ----
 </source>
-        <translation type="obsolete">---- Evaluation de la requête ----
+        <translation>---- Evaluation de la requête ----
 </translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="660"/>
+        <location filename="mqledit.cpp" line="687"/>
         <source>Query parsed.</source>
-        <translation type="obsolete">Requête évaluée.</translation>
+        <translation>Requête évaluée.</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="662"/>
+        <location filename="mqledit.cpp" line="725"/>
         <source>ERROR: Invalid query!</source>
-        <translation type="obsolete">ERREUR: Requête invalide!</translation>
+        <translation>ERREUR: Requête invalide!</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="671"/>
         <source>Not Connected</source>
-        <translation type="obsolete">Non connecté</translation>
+        <translation>Non connecté</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="672"/>
         <source>You must be connected to a database in order to execute a query.</source>
-        <translation type="obsolete">Vous devez être connecté à la base pour pouvoir exécuter une requête.</translation>
+        <translation>Vous devez être connecté à la base pour pouvoir exécuter une requête.</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="688"/>
         <source>---- Executing Query ----</source>
-        <translation type="obsolete">---- Exécution de la requête ----</translation>
+        <translation>---- Exécution de la requête ----</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="715"/>
         <source>Failed to execute query.</source>
-        <translation type="obsolete">Echec à l&apos;exécution de la requête.</translation>
+        <translation>Echec à l&apos;exécution de la requête.</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="859"/>
+        <source>Save (File)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="863"/>
+        <source>Save (Database)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="884"/>
+        <source>[*]%1 - Group: %2 Name: %3 Grade: %4 (%5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.cpp" line="56"/>
         <source>MetaSQL Editor</source>
-        <translation type="obsolete">Editeur MetaSQL</translation>
+        <translation>Editeur MetaSQL</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="45"/>
         <source>&amp;Tools</source>
-        <translation type="obsolete">&amp;Outils</translation>
+        <translation>&amp;Outils</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="56"/>
         <source>&amp;Help</source>
-        <translation type="obsolete">&amp;Aide</translation>
+        <translation>&amp;Aide</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="65"/>
         <source>&amp;View</source>
-        <translation type="obsolete">&amp;Vue</translation>
+        <translation>&amp;Vue</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="74"/>
         <source>&amp;Edit</source>
-        <translation type="obsolete">&amp;Editer</translation>
+        <translation>&amp;Editer</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="87"/>
         <source>&amp;File</source>
-        <translation type="obsolete">&amp;Fichier</translation>
+        <translation>&amp;Fichier</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="194"/>
+        <source>Save &amp;As... (File)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.ui" line="354"/>
+        <location filename="mqledit.ui" line="357"/>
         <source>Database</source>
-        <translation type="obsolete">Base de données</translation>
+        <translation>Base de données</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="153"/>
         <source>&amp;New</source>
-        <translation type="obsolete">&amp;Nouveau</translation>
+        <translation>&amp;Nouveau</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="32"/>
+        <source>[*]MetaSQL Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.ui" line="156"/>
         <source>New</source>
-        <translation type="obsolete">Nouveau</translation>
+        <translation>Nouveau</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="159"/>
         <source>Ctrl+N</source>
-        <translation type="obsolete">Ctrl+N</translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="168"/>
         <source>&amp;Open...</source>
-        <translation type="obsolete">&amp;Ouvrir...</translation>
+        <translation>&amp;Ouvrir...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="171"/>
         <source>Open</source>
-        <translation type="obsolete">Ouvrir</translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="174"/>
         <source>Ctrl+O</source>
-        <translation type="obsolete">Ctlr+O</translation>
+        <translation>Ctlr+O</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="183"/>
         <source>&amp;Save</source>
-        <translation type="obsolete">&amp;Enregistrer</translation>
+        <translation>&amp;Enregistrer</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="186"/>
+        <location filename="mqledit.cpp" line="868"/>
+        <location filename="mqledit.cpp" line="890"/>
         <source>Save</source>
-        <translation type="obsolete">Enregistrer</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="189"/>
         <source>Ctrl+S</source>
-        <translation type="obsolete">Ctrl+S</translation>
+        <translation>Ctrl+S</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
         <translation type="obsolete">Enregistrer &amp;sous...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="197"/>
         <source>Save As</source>
-        <translation type="obsolete">Enregistrer sous</translation>
+        <translation>Enregistrer sous</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="209"/>
         <source>&amp;Print...</source>
-        <translation type="obsolete">&amp;Imprimer...</translation>
+        <translation>&amp;Imprimer...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="212"/>
         <source>Print</source>
-        <translation type="obsolete">Imprimer</translation>
+        <translation>Imprimer</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="215"/>
         <source>Ctrl+P</source>
-        <translation type="obsolete">Ctrl+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="220"/>
         <source>E&amp;xit</source>
-        <translation type="obsolete">&amp;Quitter</translation>
+        <translation>&amp;Quitter</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="223"/>
         <source>Exit</source>
-        <translation type="obsolete">Quitter</translation>
+        <translation>Quitter</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="235"/>
         <source>&amp;Undo</source>
-        <translation type="obsolete">&amp;Annuler</translation>
+        <translation>&amp;Annuler</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="238"/>
         <source>Undo</source>
-        <translation type="obsolete">Annuler</translation>
+        <translation>Annuler</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="241"/>
         <source>Ctrl+Z</source>
-        <translation type="obsolete">Ctrl+Z</translation>
+        <translation>Ctrl+Z</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="246"/>
         <source>&amp;Redo</source>
-        <translation type="obsolete">&amp;Répéter</translation>
+        <translation>&amp;Répéter</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="249"/>
         <source>Redo</source>
-        <translation type="obsolete">Répéter</translation>
+        <translation>Répéter</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="252"/>
         <source>Ctrl+Y</source>
-        <translation type="obsolete">Ctrl+Y</translation>
+        <translation>Ctrl+Y</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="261"/>
         <source>&amp;Cut</source>
-        <translation type="obsolete">&amp;Couper</translation>
+        <translation>&amp;Couper</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="264"/>
         <source>Cut</source>
-        <translation type="obsolete">Couper</translation>
+        <translation>Couper</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="267"/>
         <source>Ctrl+X</source>
-        <translation type="obsolete">Ctrl+X</translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="276"/>
         <source>C&amp;opy</source>
-        <translation type="obsolete">&amp;Copier</translation>
+        <translation>&amp;Copier</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="279"/>
         <source>Copy</source>
-        <translation type="obsolete">Copier</translation>
+        <translation>Copier</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="282"/>
         <source>Ctrl+C</source>
-        <translation type="obsolete">Ctrl+C</translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="291"/>
         <source>&amp;Paste</source>
-        <translation type="obsolete">&amp;Coller</translation>
+        <translation>&amp;Coller</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="294"/>
         <source>Paste</source>
-        <translation type="obsolete">Coller</translation>
+        <translation>Coller</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="297"/>
         <source>Ctrl+V</source>
-        <translation type="obsolete">Ctrl+V</translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="306"/>
         <source>&amp;Find...</source>
-        <translation type="obsolete">&amp;Rechercher...</translation>
+        <translation>&amp;Rechercher...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="309"/>
         <source>Find</source>
-        <translation type="obsolete">Rechercher</translation>
+        <translation>Rechercher</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="312"/>
         <source>Ctrl+F</source>
-        <translation type="obsolete">Ctrl+F</translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="317"/>
         <source>&amp;Contents...</source>
-        <translation type="obsolete">&amp;Contenu...</translation>
+        <translation>&amp;Contenu...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="320"/>
         <source>Contents</source>
-        <translation type="obsolete">Contenu</translation>
+        <translation>Contenu</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="328"/>
         <source>&amp;Index...</source>
-        <translation type="obsolete">&amp;Index...</translation>
+        <translation>&amp;Index...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="331"/>
         <source>Index</source>
-        <translation type="obsolete">Index</translation>
+        <translation>Index</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="343"/>
         <source>&amp;About</source>
-        <translation type="obsolete">&amp;A Propos</translation>
+        <translation>&amp;A Propos</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="346"/>
         <source>About</source>
-        <translation type="obsolete">A propos</translation>
+        <translation>A propos</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="362"/>
+        <source>Connect to Database...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.ui" line="365"/>
         <source>Connect...</source>
-        <translation type="obsolete">Connecter...</translation>
+        <translation>Connecter...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="370"/>
+        <source>Disconnect From Database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.ui" line="373"/>
         <source>Disconnect</source>
-        <translation type="obsolete">Déconnecter</translation>
+        <translation>Déconnecter</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="378"/>
+        <location filename="mqledit.ui" line="381"/>
         <source>Unnamed</source>
-        <translation type="obsolete">Sans nom</translation>
+        <translation>Sans nom</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="386"/>
+        <location filename="mqledit.ui" line="389"/>
         <source>Parameter List...</source>
-        <translation type="obsolete">Liste de paramètres...</translation>
+        <translation>Liste de paramètres...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="394"/>
+        <location filename="mqledit.ui" line="397"/>
         <source>Log Output...</source>
-        <translation type="obsolete">Journal...</translation>
+        <translation>Journal...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="402"/>
+        <location filename="mqledit.ui" line="405"/>
         <source>Results...</source>
-        <translation type="obsolete">Resultats...</translation>
+        <translation>Resultats...</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="410"/>
+        <location filename="mqledit.ui" line="413"/>
         <source>Parse Query</source>
-        <translation type="obsolete">Evaluer la requête</translation>
+        <translation>Evaluer la requête</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="418"/>
+        <location filename="mqledit.ui" line="421"/>
         <source>Execute Query</source>
-        <translation type="obsolete">Exécuter la requête</translation>
+        <translation>Exécuter la requête</translation>
     </message>
     <message>
+        <location filename="mqledit.ui" line="426"/>
+        <location filename="mqledit.ui" line="429"/>
         <source>Executed SQL...</source>
-        <translation type="obsolete">SQL exécuté...</translation>
+        <translation>SQL exécuté...</translation>
+    </message>
+    <message>
+        <location filename="mqledit.ui" line="434"/>
+        <source>Open... (Database)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.ui" line="439"/>
+        <source>Save As... (Database)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.ui" line="450"/>
+        <source>Test Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mqledit.ui" line="455"/>
+        <source>Search For Parameters</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>ParameterEdit</name>
+    <name>MetaSQLSaveParameters</name>
     <message>
-        <source>&amp;New</source>
-        <translation type="obsolete">&amp;Nouveau</translation>
+        <location filename="metasqlsaveparameters.ui" line="14"/>
+        <source>MetaSQL Save Parameters</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
-        <translation type="obsolete">&amp;Editer</translation>
-    </message>
-</context>
-<context>
-    <name>ParameterProperties</name>
-    <message>
-        <source>&amp;New</source>
-        <translation type="obsolete">&amp;Nouveau</translation>
+        <location filename="metasqlsaveparameters.ui" line="22"/>
+        <source>Schema:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
-        <translation type="obsolete">&amp;Editer</translation>
+        <location filename="metasqlsaveparameters.ui" line="29"/>
+        <source>Group:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation type="obsolete">Avertissement</translation>
+        <location filename="metasqlsaveparameters.ui" line="36"/>
+        <source>Name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="metasqlsaveparameters.ui" line="59"/>
+        <source>Grade:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="metasqlsaveparameters.ui" line="66"/>
+        <source>##</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="metasqlsaveparameters.ui" line="100"/>
+        <source>Notes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="metasqlsaveparameters.cpp" line="158"/>
+        <source>Database Errror</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
+        <location filename="mqledit.cpp" line="748"/>
         <source>MQLEdit for Windows</source>
-        <translation type="obsolete">MQLEdit pour Windows</translation>
+        <translation>MQLEdit pour Windows</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="750"/>
         <source>MQLEdit for Linux</source>
-        <translation type="obsolete">MQLEdit pour Linux</translation>
+        <translation>MQLEdit pour Linux</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="752"/>
         <source>MQLEdit for OS X</source>
-        <translation type="obsolete">MQLEdit pour OS X</translation>
+        <translation>MQLEdit pour OS X</translation>
     </message>
     <message>
+        <location filename="mqledit.cpp" line="754"/>
         <source>MQLEdit</source>
-        <translation type="obsolete">MQLEdit</translation>
+        <translation>MQLEdit</translation>
     </message>
     <message>
         <source>Copyright (c) 2002-2011, OpenMFG, LLC.</source>
         <translation type="obsolete">Copyright (c) 2002-2011, OpenMFG, LLC.</translation>
     </message>
     <message>
-        <location filename="metasql_gui/main.cpp" line="46"/>
-        <source>MetaSQL Editor for Windows</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="metasql_gui/main.cpp" line="48"/>
-        <source>MetaSQL Editor for Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="metasql_gui/main.cpp" line="50"/>
-        <source>MetaSQL Editor for OS X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="metasql_gui/main.cpp" line="52"/>
-        <source>MetaSQL Editor</source>
-        <translation type="unfinished">Editeur MetaSQL</translation>
-    </message>
-    <message>
-        <location filename="metasql_gui/main.cpp" line="96"/>
-        <location filename="importmql_gui/main.cpp" line="100"/>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="100"/>
         <source>Can not load database driver</source>
-        <translation type="unfinished">Impossible de se connecter au pilote de base de données</translation>
+        <translation type="obsolete">Impossible de se connecter au pilote de base de données</translation>
     </message>
     <message>
-        <location filename="metasql_gui/main.cpp" line="97"/>
-        <location filename="importmql_gui/main.cpp" line="100"/>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="100"/>
         <source>Unable to load the database driver. Please contact your systems administrator.</source>
-        <translation type="unfinished">Impossible de charger le pilot de la base. Veuillez contacter votre administrateur système.</translation>
+        <translation type="obsolete">Impossible de charger le pilot de la base. Veuillez contacter votre administrateur système.</translation>
     </message>
     <message>
-        <location filename="metasql_gui/main.cpp" line="106"/>
-        <location filename="importmql_gui/main.cpp" line="109"/>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="109"/>
         <source>Unable to connect to database</source>
-        <translation type="unfinished">Impossible de se connecter à la base de données</translation>
+        <translation type="obsolete">Impossible de se connecter à la base de données</translation>
     </message>
     <message>
-        <location filename="metasql_gui/main.cpp" line="107"/>
-        <location filename="importmql_gui/main.cpp" line="109"/>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="109"/>
         <source>Unable to connect to the database with the given information.</source>
-        <translation type="unfinished">Impossible de se connecter à la base de données avec ces informations.</translation>
+        <translation type="obsolete">Impossible de se connecter à la base de données avec ces informations.</translation>
     </message>
     <message>
-        <source>Copyright (c) 2002-2012, OpenMFG, LLC.</source>
-        <translation type="obsolete">Copyright (c) 2002-2011, OpenMFG, LLC. {2002-2012,?}</translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/main.cpp" line="43"/>
-        <source>MetaSQL Import Tool for Windows</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/main.cpp" line="45"/>
-        <source>MetaSQL Import Tool for Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/main.cpp" line="47"/>
-        <source>MetaSQL Import Tool for OS X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="importmql_gui/main.cpp" line="49"/>
-        <source>MetaSQL Import Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="38"/>
-        <source>Report Import Tool for Windows</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="40"/>
-        <source>Report Import Tool for Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="42"/>
-        <source>Report Import Tool for OS X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="44"/>
-        <source>Report Import Tool</source>
+        <location filename="mqlutil.cpp" line="140"/>
+        <source>Could not open file &apos;%1&apos;: %2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ResultsOutput</name>
     <message>
+        <location filename="resultsoutput.ui" line="31"/>
         <source>Results Output</source>
-        <translation type="obsolete">Résultats</translation>
+        <translation>Résultats</translation>
+    </message>
+    <message>
+        <location filename="resultsoutput.cpp" line="37"/>
+        <source>Copy All</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>loginOptions</name>
+    <name>SelectMQL</name>
     <message>
-        <source>&amp;Save</source>
-        <translation type="obsolete">&amp;Enregistrer</translation>
+        <location filename="selectmql.ui" line="14"/>
+        <source>Choose a MetaSQL Query</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="selectmql.ui" line="20"/>
+        <source>Schema or Package:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="selectmql.cpp" line="160"/>
+        <source>Database Error</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

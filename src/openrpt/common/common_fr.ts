@@ -88,421 +88,6 @@
     </message>
 </context>
 <context>
-    <name>GraphWindow</name>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="30"/>
-        <source>Graph Window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="102"/>
-        <source>Labels</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="114"/>
-        <source>Data:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="127"/>
-        <source>Title:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="140"/>
-        <source>Value:</source>
-        <translation type="unfinished">Valeur:</translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="186"/>
-        <source>Padding (in pixels)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="198"/>
-        <source>Vertical:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="211"/>
-        <source>Horizontal:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="253"/>
-        <source>Value Range</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="265"/>
-        <source>Max:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="278"/>
-        <source>Min:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="329"/>
-        <source>Clear All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="340"/>
-        <source>Graph Style</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="352"/>
-        <source>Bars</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="362"/>
-        <source>Lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="369"/>
-        <source>Points</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="393"/>
-        <source>Number of Sets:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="419"/>
-        <source>Number of References:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="462"/>
-        <source>Label</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="485"/>
-        <source>Populate with SQL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../graph/graphwindow.ui" line="524"/>
-        <source>Execute</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ImportWindow</name>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="30"/>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="100"/>
-        <source>MetaSQL Import Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="45"/>
-        <source>Import into schema:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="70"/>
-        <source>MetaSQL Files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="85"/>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="240"/>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="243"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="58"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="216"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="219"/>
-        <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="88"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="61"/>
-        <source>Alt+A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="95"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="68"/>
-        <source>Remove</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="112"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="85"/>
-        <source>&amp;Import</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="115"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="88"/>
-        <source>Alt+I</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="138"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="111"/>
-        <source>Select All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="150"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="123"/>
-        <source>Messages</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="179"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="155"/>
-        <source>&amp;File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="187"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="163"/>
-        <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="199"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="175"/>
-        <source>&amp;Contents...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="202"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="178"/>
-        <source>Contents</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="210"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="186"/>
-        <source>&amp;Index...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="213"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="189"/>
-        <source>Index</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="221"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="197"/>
-        <source>&amp;About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="224"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="200"/>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="232"/>
-        <location filename="../MetaSQL/importmql_gui/importwindow.ui" line="235"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="208"/>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="211"/>
-        <source>E&amp;xit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="63"/>
-        <source>&lt;font color=red&gt;The following error was encountered retrieving available schemas:
-	%1
-	%2
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="88"/>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="94"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="73"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="79"/>
-        <source>Not Yet Implemented</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="88"/>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="94"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="73"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="79"/>
-        <source>This function has not been implemented.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="101"/>
-        <source>%1 version %2
-%3, All Rights Reserved
-Build: %4
-
-%5 is a tool for importing MetaSQL files into a database.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="116"/>
-        <source>Select one or more MetaSQL files to open</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="117"/>
-        <source>MetSQL (*.mql)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="137"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="123"/>
-        <source>Import Started...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="141"/>
-        <source>No Reports Selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="142"/>
-        <source>You have not selected any reports to import. Would you like to select all loaded reports now?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="154"/>
-        <source>&lt;font color=red&gt;The following error was encountered disabling the trigger:
-	%1
-	%2
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="198"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="190"/>
-        <source>&lt;font color=red&gt;The following error was encountered while trying to import %1 into the database:
-	%2
-	%3
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="211"/>
-        <source>The saveMetasql stored procedure failed for %1, returning %2.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="215"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="197"/>
-        <source>Import successful of %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="218"/>
-        <source>No results returned from query for %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="222"/>
-        <source>&lt;font color=orange&gt;The document %1 does not have a name and/or group defined
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="226"/>
-        <source>&lt;font color=red&gt;Error reading file %1 or file was empty
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="230"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="212"/>
-        <source>&lt;font color=red&gt;Could not open the specified file: %1
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="239"/>
-        <source>&lt;font color=red&gt;The following error was encountered re-enabling the trigger:
-	%1
-	%2
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/importwindow.cpp" line="244"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="218"/>
-        <source>Import complete!
-
-
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="30"/>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="85"/>
-        <source>Report Import Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.ui" line="37"/>
-        <source>Reports</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="86"/>
-        <source>%1 version %2
-%3, All Rights Reserved
-Build: %4
-
-%5 is a tool for importing report definition files into a database.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="102"/>
-        <source>Select one or more reports to open</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="103"/>
-        <source>Report Definitions (*.xml)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="200"/>
-        <source>&lt;font color=orange&gt;The document %1 does not have a report name defined
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="204"/>
-        <source>&lt;font color=red&gt;XML Document %1 does not have root node of report
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="208"/>
-        <source>&lt;font color=red&gt;Error parsing file %1: %2 on line %3 column %4
-&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="242"/>
-        <source>Edit Grade</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/importwindow.cpp" line="242"/>
-        <source>Grade: </source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>IntEdit</name>
     <message>
         <source>Int</source>
@@ -544,8 +129,9 @@ Build: %4
 <context>
     <name>LanguageOptions</name>
     <message>
+        <location filename="languageoptions.cpp" line="74"/>
         <source>Default</source>
-        <translation type="obsolete">Par défaut</translation>
+        <translation>Par défaut</translation>
     </message>
 </context>
 <context>
@@ -713,43 +299,52 @@ Build: %4
 <context>
     <name>ParamListEdit</name>
     <message>
+        <location filename="paramlistedit.ui" line="30"/>
         <source>List</source>
-        <translation type="obsolete">Liste</translation>
+        <translation>Liste</translation>
     </message>
     <message>
+        <location filename="paramlistedit.ui" line="41"/>
         <source>List:</source>
-        <translation type="obsolete">Liste:</translation>
+        <translation>Liste:</translation>
     </message>
     <message>
+        <location filename="paramlistedit.ui" line="64"/>
         <source>Select</source>
-        <translation type="obsolete">Sélectionner</translation>
+        <translation>Sélectionner</translation>
     </message>
     <message>
+        <location filename="paramlistedit.ui" line="71"/>
         <source>Cancel</source>
-        <translation type="obsolete">Annuler</translation>
+        <translation>Annuler</translation>
     </message>
 </context>
 <context>
     <name>ParameterEdit</name>
     <message>
+        <location filename="parameteredit.ui" line="38"/>
         <source>Active</source>
-        <translation type="obsolete">Activé</translation>
+        <translation>Activé</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="43"/>
         <source>Name</source>
-        <translation type="obsolete">Nom</translation>
+        <translation>Nom</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="48"/>
         <source>Type</source>
-        <translation type="obsolete">Type</translation>
+        <translation>Type</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="53"/>
         <source>Value</source>
-        <translation type="obsolete">Valeur</translation>
+        <translation>Valeur</translation>
     </message>
     <message>
+        <location filename="parameteredit.cpp" line="187"/>
         <source>Name already exists</source>
-        <translation type="obsolete">Le nom existe déjà</translation>
+        <translation>Le nom existe déjà</translation>
     </message>
     <message>
         <source>The name for the parameter you specified already exists in the list.</source>
@@ -772,8 +367,9 @@ Build: %4
         <translation type="obsolete">Booléen</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="113"/>
         <source>List</source>
-        <translation type="obsolete">Liste</translation>
+        <translation>Liste</translation>
     </message>
     <message>
         <source>Unknown Type</source>
@@ -792,249 +388,259 @@ Build: %4
         <translation type="obsolete">Je ne sais pas éditer le type de QVariant %1.</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="31"/>
         <source>Parameter List</source>
-        <translation type="obsolete">Liste de paramètres</translation>
+        <translation>Liste de paramètres</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="63"/>
         <source>&amp;OK</source>
-        <translation type="obsolete">&amp;OK</translation>
+        <translation>&amp;OK</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="66"/>
         <source>Alt+O</source>
-        <translation type="obsolete">Alt+O</translation>
+        <translation>Alt+O</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="73"/>
         <source>&amp;Cancel</source>
-        <translation type="obsolete">&amp;Annuler</translation>
+        <translation>&amp;Annuler</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="76"/>
         <source>Alt+C</source>
-        <translation type="obsolete">Alt+C</translation>
+        <translation>Alt+C</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="93"/>
         <source>&amp;New</source>
-        <translation type="obsolete">&amp;Nouveau</translation>
+        <translation>&amp;Nouveau</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="96"/>
         <source>Alt+N</source>
-        <translation type="obsolete">Alt+N</translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="103"/>
         <source>&amp;Edit</source>
-        <translation type="obsolete">&amp;Editer</translation>
+        <translation>&amp;Editer</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="106"/>
+        <location filename="parameteredit.ui" line="116"/>
         <source>Alt+E</source>
-        <translation type="obsolete">Alt+E</translation>
+        <translation>Alt+E</translation>
     </message>
     <message>
+        <location filename="parameteredit.ui" line="123"/>
         <source>Delete</source>
-        <translation type="obsolete">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
+        <location filename="parameteredit.cpp" line="75"/>
         <source>Not a Valid Report</source>
-        <translation type="obsolete">Pas un rapport valide</translation>
+        <translation>Pas un rapport valide</translation>
     </message>
     <message>
+        <location filename="parameteredit.cpp" line="76"/>
         <source>The report definition does not appear to be a valid report.
 
 The root node is not &apos;report&apos;.</source>
-        <translation type="obsolete">La définition de rapport parait invalide.
+        <translation>La définition de rapport parait invalide.
 
 Le noeud racine n&apos;est pas &apos;report&apos;.</translation>
+    </message>
+    <message>
+        <location filename="parameteredit.cpp" line="188"/>
+        <source>&lt;p&gt;The name for the parameter you specified already exists in the list.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ParameterProperties</name>
     <message>
+        <location filename="parameterproperties.ui" line="14"/>
+        <source>Parameter Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="parameterproperties.ui" line="20"/>
         <source>Type:</source>
-        <translation type="obsolete">Type:</translation>
+        <translation type="unfinished">Type:</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="34"/>
+        <location filename="parameterproperties.cpp" line="107"/>
+        <location filename="parameterproperties.cpp" line="207"/>
+        <location filename="parameterproperties.cpp" line="274"/>
+        <location filename="parameterproperties.cpp" line="301"/>
         <source>String</source>
-        <translation type="obsolete">Chaîne</translation>
+        <translation type="unfinished">Chaîne</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="39"/>
+        <location filename="parameterproperties.cpp" line="95"/>
+        <location filename="parameterproperties.cpp" line="198"/>
+        <location filename="parameterproperties.cpp" line="280"/>
+        <location filename="parameterproperties.cpp" line="307"/>
         <source>Bool</source>
-        <translation type="obsolete">Booléen</translation>
+        <translation type="unfinished">Booléen</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="44"/>
+        <location filename="parameterproperties.cpp" line="99"/>
+        <location filename="parameterproperties.cpp" line="201"/>
+        <location filename="parameterproperties.cpp" line="276"/>
+        <location filename="parameterproperties.cpp" line="303"/>
         <source>Int</source>
-        <translation type="obsolete">Entier</translation>
+        <translation type="unfinished">Entier</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="49"/>
+        <location filename="parameterproperties.cpp" line="103"/>
+        <location filename="parameterproperties.cpp" line="204"/>
+        <location filename="parameterproperties.cpp" line="278"/>
+        <location filename="parameterproperties.cpp" line="305"/>
         <source>Double</source>
-        <translation type="obsolete">Double</translation>
+        <translation type="unfinished">Double</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="54"/>
+        <location filename="parameterproperties.cpp" line="111"/>
+        <location filename="parameterproperties.cpp" line="210"/>
+        <location filename="parameterproperties.cpp" line="282"/>
+        <location filename="parameterproperties.cpp" line="309"/>
         <source>List</source>
-        <translation type="obsolete">Liste</translation>
+        <translation type="unfinished">Liste</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="72"/>
         <source>Name:</source>
-        <translation type="obsolete">Nom:</translation>
+        <translation type="unfinished">Nom:</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="95"/>
+        <location filename="parameterproperties.ui" line="115"/>
+        <location filename="parameterproperties.ui" line="155"/>
+        <location filename="parameterproperties.ui" line="175"/>
         <source>Value:</source>
-        <translation type="obsolete">Valeur:</translation>
+        <translation type="unfinished">Valeur:</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="135"/>
         <source>False</source>
-        <translation type="obsolete">Faux</translation>
+        <translation type="unfinished">Faux</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="140"/>
         <source>True</source>
-        <translation type="obsolete">Vrai</translation>
+        <translation type="unfinished">Vrai</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="192"/>
         <source>Values:</source>
-        <translation type="obsolete">Valeurs:</translation>
+        <translation type="unfinished">Valeurs:</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="210"/>
         <source>&amp;New</source>
-        <translation type="obsolete">&amp;Nouveau</translation>
+        <translation type="unfinished">&amp;Nouveau</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="213"/>
         <source>Alt+N</source>
-        <translation type="obsolete">Alt+N</translation>
+        <translation type="unfinished">Alt+N</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="230"/>
         <source>Move &amp;Up</source>
-        <translation type="obsolete">&amp;Monter</translation>
+        <translation type="unfinished">&amp;Monter</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="233"/>
         <source>Alt+U</source>
-        <translation type="obsolete">Alt+U</translation>
+        <translation type="unfinished">Alt+U</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="240"/>
         <source>&amp;Edit</source>
-        <translation type="obsolete">&amp;Editer</translation>
+        <translation type="unfinished">&amp;Editer</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="243"/>
         <source>Alt+E</source>
-        <translation type="obsolete">Alt+E</translation>
+        <translation type="unfinished">Alt+E</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="250"/>
         <source>Move &amp;Down</source>
-        <translation type="obsolete">&amp;Descendre</translation>
+        <translation type="unfinished">&amp;Descendre</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="253"/>
         <source>Alt+D</source>
-        <translation type="obsolete">Alt+D</translation>
+        <translation type="unfinished">Alt+D</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="270"/>
         <source>Delete</source>
-        <translation type="obsolete">Supprimer</translation>
+        <translation type="unfinished">Supprimer</translation>
     </message>
     <message>
+        <location filename="parameterproperties.ui" line="299"/>
         <source>Active</source>
-        <translation type="obsolete">Activé</translation>
+        <translation type="unfinished">Activé</translation>
     </message>
     <message>
+        <location filename="parameterproperties.cpp" line="115"/>
+        <location filename="parameterproperties.cpp" line="188"/>
+        <location filename="parameterproperties.cpp" line="213"/>
         <source>Warning</source>
-        <translation type="obsolete">Avertissement</translation>
+        <translation type="unfinished">Avertissement</translation>
     </message>
     <message>
+        <location filename="parameterproperties.cpp" line="116"/>
         <source>I do not know how to edit QVariant type %1.</source>
-        <translation type="obsolete">Je ne sais pas éditer le type de QVariant %1.</translation>
+        <translation type="unfinished">Je ne sais pas éditer le type de QVariant %1.</translation>
     </message>
     <message>
+        <location filename="parameterproperties.cpp" line="189"/>
+        <location filename="parameterproperties.cpp" line="214"/>
+        <source>I do not recognize type %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="parameterproperties.cpp" line="285"/>
+        <location filename="parameterproperties.cpp" line="312"/>
         <source>Unknown Type</source>
-        <translation type="obsolete">Type inconnu</translation>
+        <translation type="unfinished">Type inconnu</translation>
     </message>
     <message>
+        <location filename="parameterproperties.cpp" line="286"/>
+        <location filename="parameterproperties.cpp" line="313"/>
         <source>I do not understand the type %1.</source>
-        <translation type="obsolete">Je ne comprends pas le type %1.</translation>
+        <translation type="unfinished">Je ne comprends pas le type %1.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../MetaSQL/metasql_gui/main.cpp" line="46"/>
-        <source>MetaSQL Editor for Windows</source>
+        <location filename="data.cpp" line="25"/>
+        <source>%1 %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MetaSQL/metasql_gui/main.cpp" line="48"/>
-        <source>MetaSQL Editor for Linux</source>
+        <location filename="data.cpp" line="26"/>
+        <source>Copyright (c) 2002-2012, OpenMFG, LLC.</source>
+        <oldsource>Copyright (c) 2002-2011, OpenMFG, LLC.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MetaSQL/metasql_gui/main.cpp" line="50"/>
-        <source>MetaSQL Editor for OS X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/metasql_gui/main.cpp" line="52"/>
-        <source>MetaSQL Editor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/metasql_gui/main.cpp" line="96"/>
-        <location filename="../MetaSQL/importmql_gui/main.cpp" line="100"/>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="100"/>
-        <source>Can not load database driver</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/metasql_gui/main.cpp" line="97"/>
-        <location filename="../MetaSQL/importmql_gui/main.cpp" line="100"/>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="100"/>
-        <source>Unable to load the database driver. Please contact your systems administrator.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/metasql_gui/main.cpp" line="106"/>
-        <location filename="../MetaSQL/importmql_gui/main.cpp" line="109"/>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="109"/>
-        <source>Unable to connect to database</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/metasql_gui/main.cpp" line="107"/>
-        <location filename="../MetaSQL/importmql_gui/main.cpp" line="109"/>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="109"/>
-        <source>Unable to connect to the database with the given information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/main.cpp" line="43"/>
-        <source>MetaSQL Import Tool for Windows</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/main.cpp" line="45"/>
-        <source>MetaSQL Import Tool for Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/main.cpp" line="47"/>
-        <source>MetaSQL Import Tool for OS X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../MetaSQL/importmql_gui/main.cpp" line="49"/>
-        <source>MetaSQL Import Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="38"/>
-        <source>Report Import Tool for Windows</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="40"/>
-        <source>Report Import Tool for Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="42"/>
-        <source>Report Import Tool for OS X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../OpenRPT/import_gui/main.cpp" line="44"/>
-        <source>Report Import Tool</source>
+        <location filename="data.cpp" line="28"/>
+        <source>3.3.4</source>
+        <oldsource>3.3.1</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1080,33 +686,39 @@ Le noeud racine n&apos;est pas &apos;report&apos;.</translation>
 <context>
     <name>login</name>
     <message>
+        <location filename="login.cpp" line="146"/>
         <source>Initializing the Database Connector</source>
-        <translation type="obsolete">Initialisation du connecteur à la base</translation>
+        <translation>Initialisation du connecteur à la base</translation>
     </message>
     <message>
+        <location filename="login.cpp" line="159"/>
         <source>No Database Driver</source>
-        <translation type="obsolete">Pas de pilote de base de données</translation>
+        <translation>Pas de pilote de base de données</translation>
     </message>
     <message>
+        <location filename="login.cpp" line="160"/>
         <source>A connection could not be established with the specified
 Database as the Proper Database Drivers have not been installed.
 Contact your Systems Administrator.
 </source>
-        <translation type="obsolete">
+        <translation>
         La connection n&apos;a pas pu être établie avec la base spécifiée
         car les pilotes requis n&apos;ont pas été installés.
         Contactez votre administrateur système.
       </translation>
     </message>
     <message>
+        <location filename="login.cpp" line="180"/>
         <source>Connecting to the Database</source>
-        <translation type="obsolete">Connexion à la base</translation>
+        <translation>Connexion à la base</translation>
     </message>
     <message>
+        <location filename="login.cpp" line="193"/>
         <source>Cannot Connect to Database Server</source>
-        <translation type="obsolete">Impossible de se connecter au serveur de base de données</translation>
+        <translation>Impossible de se connecter au serveur de base de données</translation>
     </message>
     <message>
+        <location filename="login.cpp" line="194"/>
         <source>A connection to the specified Database Server cannot be made.  This may be due to an
 incorrect Username and/or Password or that the Database Server in question cannot
 support anymore connections.
@@ -1116,7 +728,7 @@ Database Server is less busy.
 
 System Error &apos;%1&apos;
 %2</source>
-        <translation type="obsolete">
+        <translation>
         La connexion à la base spécifiée est impossible. Ceci peut être dû à un nom d&apos;utilisateur
         ou un mot de passe incorrect ou bien que le serveur en question n&apos;accepte pas de
         connexions supplémentaires.
@@ -1129,79 +741,107 @@ System Error &apos;%1&apos;
       </translation>
     </message>
     <message>
+        <location filename="login.cpp" line="214"/>
         <source>Logging into the Database</source>
-        <translation type="obsolete">Connexion à la base</translation>
+        <translation>Connexion à la base</translation>
     </message>
     <message>
+        <location filename="login.ui" line="31"/>
         <source>Log In</source>
-        <translation type="obsolete">Connexion</translation>
+        <translation>Connexion</translation>
     </message>
     <message>
+        <location filename="login.ui" line="2010"/>
         <source>Build: </source>
-        <translation type="obsolete">Build: </translation>
+        <translation>Build: </translation>
     </message>
     <message>
+        <location filename="login.ui" line="2538"/>
         <source>&amp;Username:</source>
-        <translation type="obsolete">&amp;Utilisateur:</translation>
+        <translation>&amp;Utilisateur:</translation>
     </message>
     <message>
+        <location filename="login.ui" line="2551"/>
         <source>&amp;Password:</source>
-        <translation type="obsolete">&amp;Mot de passe:</translation>
+        <translation>&amp;Mot de passe:</translation>
     </message>
     <message>
+        <location filename="login.ui" line="2637"/>
         <source>S&amp;erver:</source>
-        <translation type="obsolete">&amp;Serveur:</translation>
+        <translation>&amp;Serveur:</translation>
     </message>
     <message>
+        <location filename="login.ui" line="2650"/>
         <source>&amp;Database:</source>
-        <translation type="obsolete">&amp;Base de données:</translation>
+        <translation>&amp;Base de données:</translation>
     </message>
     <message>
+        <location filename="login.ui" line="2781"/>
         <source>&amp;Cancel</source>
-        <translation type="obsolete">&amp;Annuler</translation>
+        <translation>&amp;Annuler</translation>
     </message>
     <message>
+        <location filename="login.ui" line="2788"/>
         <source>&amp;Login</source>
-        <translation type="obsolete">&amp;Connecter</translation>
+        <translation>&amp;Connecter</translation>
     </message>
     <message>
+        <location filename="login.ui" line="2801"/>
         <source>&amp;Options</source>
-        <translation type="obsolete">&amp;Options</translation>
+        <translation>&amp;Options</translation>
     </message>
     <message>
+        <location filename="login.cpp" line="112"/>
         <source>Version </source>
-        <translation type="obsolete">Version </translation>
+        <translation>Version </translation>
     </message>
 </context>
 <context>
     <name>loginOptions</name>
     <message>
+        <location filename="loginOptions.ui" line="31"/>
         <source>Login Options</source>
-        <translation type="obsolete">Options de connexion</translation>
+        <translation>Options de connexion</translation>
     </message>
     <message>
+        <location filename="loginOptions.ui" line="87"/>
         <source>&amp;Database:</source>
-        <translation type="obsolete">&amp;Base de données:</translation>
+        <translation>&amp;Base de données:</translation>
     </message>
     <message>
+        <location filename="loginOptions.ui" line="194"/>
         <source>S&amp;erver:</source>
-        <translation type="obsolete">&amp;Serveur:</translation>
+        <translation>&amp;Serveur:</translation>
     </message>
     <message>
+        <location filename="loginOptions.ui" line="219"/>
         <source>&amp;Port:</source>
-        <translation type="obsolete">&amp;Port:</translation>
+        <translation>&amp;Port:</translation>
     </message>
     <message>
+        <location filename="loginOptions.ui" line="246"/>
         <source>Driver:</source>
-        <translation type="obsolete">Pilote:</translation>
+        <translation>Pilote:</translation>
     </message>
     <message>
+        <location filename="loginOptions.ui" line="309"/>
         <source>&amp;Cancel</source>
-        <translation type="obsolete">&amp;Annuler</translation>
+        <translation>&amp;Annuler</translation>
     </message>
     <message>
+        <location filename="loginOptions.ui" line="316"/>
         <source>&amp;Save</source>
-        <translation type="obsolete">&amp;Enregistrer</translation>
+        <translation>&amp;Enregistrer</translation>
+    </message>
+    <message>
+        <location filename="loginOptions.ui" line="260"/>
+        <source>PostgreSQL</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="loginOptions.ui" line="265"/>
+        <source>ODBC</source>
+        <translation></translation>
     </message>
 </context>
 </TS>
