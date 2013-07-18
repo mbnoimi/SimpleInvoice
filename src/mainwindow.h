@@ -4,12 +4,15 @@
 #include <QMainWindow>
 #include <QtWidgets>
 #include <QtSql>
+//#include "OpenRPT/renderapp/renderwindow.h"
+#include <renderwindow.h>
 
 namespace Ui {
 class MainWindow;
 }
 
-class MainWindow : public QMainWindow
+class MainWindow : /*public QMainWindow
+        ,*/ public RenderWindow
 {
     Q_OBJECT
     
@@ -39,6 +42,8 @@ private slots:
 
     void on_actionPrint_triggered();
 
+    void on_actionSaveAsPDF_triggered();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase _db;
@@ -49,7 +54,7 @@ private:
     bool isOpen();
     QString dbPath();
     void updateData();
-
+    void print(int id, QString filePath="");
 };
 
 #endif // MAINWINDOW_H

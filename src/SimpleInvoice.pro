@@ -4,12 +4,19 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui sql xml
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = SimpleInvoice
 TEMPLATE = app
+
+include( OpenRPT/global.pri )
+
+INCLUDEPATH += OpenRPT/OpenRPT/common \
+OpenRPT/OpenRPT/Dmtx_Library \
+OpenRPT/OpenRPT/renderer \
+OpenRPT/OpenRPT/renderapp
 
 
 SOURCES += main.cpp\
@@ -57,3 +64,27 @@ OTHER_FILES += \
 
 TRANSLATIONS += ./langs/ar.ts \
                 ./langs/en.ts
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/OpenRPT/lib/release/ -lcommon
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/OpenRPT/lib/debug/ -lcommon
+else:unix: LIBS += -L$$PWD/OpenRPT/lib/ -lcommon
+
+INCLUDEPATH += $$PWD/OpenRPT
+DEPENDPATH += $$PWD/OpenRPT
+
+win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/OpenRPT/lib/release/common.lib
+else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/OpenRPT/lib/debug/common.lib
+else:unix: PRE_TARGETDEPS += $$PWD/OpenRPT/lib/libcommon.a
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/OpenRPT/lib/release/ -lDmtx_Library
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/OpenRPT/lib/debug/ -lDmtx_Library
+else:unix: LIBS += -L$$PWD/OpenRPT/lib/ -lDmtx_Library
+
+INCLUDEPATH += $$PWD/OpenRPT
+DEPENDPATH += $$PWD/OpenRPT
+
+win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/OpenRPT/lib/release/Dmtx_Library.lib
+else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/OpenRPT/lib/debug/Dmtx_Library.lib
+else:unix: PRE_TARGETDEPS += $$PWD/OpenRPT/lib/libDmtx_Library.a
+
+
