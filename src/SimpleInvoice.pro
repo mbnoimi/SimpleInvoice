@@ -4,87 +4,63 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql xml
+TEMPLATE = subdirs
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+SUBDIRS = openrpt \
+SimpleInvoice
 
-TARGET = SimpleInvoice
-TEMPLATE = app
+CONFIG += ordered
 
-include( OpenRPT/global.pri )
+TRANSLATIONS += SimpleInvoice/langs/en.ts \
+SimpleInvoice/langs/ar.ts \
+openrpt/MetaSQL/metasql_fr.ts \
+openrpt/MetaSQL/metasql_it.ts \
+openrpt/MetaSQL/metasql_ru.ts \
+openrpt/MetaSQL/metasql_es.ts \
+openrpt/OpenRPT/renderapp/renderapp_fr.ts \
+openrpt/OpenRPT/renderapp/renderapp_it.ts \
+openrpt/OpenRPT/renderapp/renderapp_ru.ts \
+openrpt/OpenRPT/renderapp/renderapp_es.ts \
+openrpt/OpenRPT/renderer/renderer_fr.ts \
+openrpt/OpenRPT/renderer/renderer_it.ts \
+openrpt/OpenRPT/renderer/renderer_ru.ts \
+openrpt/OpenRPT/renderer/renderer_es.ts \
+openrpt/OpenRPT/writer/writer_fr.ts \
+openrpt/OpenRPT/writer/writer_it.ts \
+openrpt/OpenRPT/writer/writer_ru.ts \
+openrpt/OpenRPT/writer/writer_es.ts \
+openrpt/OpenRPT/wrtembed/wrtembed_fr.ts \
+openrpt/OpenRPT/wrtembed/wrtembed_it.ts \
+openrpt/OpenRPT/wrtembed/wrtembed_ru.ts \
+openrpt/OpenRPT/wrtembed/wrtembed_es.ts \
+openrpt/common/common_es.ts \
+openrpt/common/common_fr.ts \
+openrpt/common/common_it.ts \
+openrpt/common/common_ru.ts
 
-INCLUDEPATH += OpenRPT/OpenRPT/common \
-OpenRPT/OpenRPT/Dmtx_Library \
-OpenRPT/OpenRPT/renderer \
-OpenRPT/OpenRPT/renderapp
-
-
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    dialogabout.cpp \
-    dialognew.cpp \
-    dialogsettings.cpp
-
-HEADERS  += mainwindow.h \
-    dialogabout.h \
-    queries.h \
-    dialognew.h \
-    dialogsettings.h
-
-FORMS    += mainwindow.ui \
-    dialogabout.ui \
-    dialognew.ui \
-    dialogsettings.ui
-
-unix {
-    DESTDIR = ../bin/lin
-    MOC_DIR = build_tmp_lin
-    UI_DIR = build_tmp_lin
-    OBJECTS_DIR = build_tmp_lin
-    RCC_DIR = build_tmp_lin
-}
-win32 {
-    DESTDIR = ../bin/win32
-    MOC_DIR = build_tmp_win
-    UI_DIR = build_tmp_win
-    OBJECTS_DIR = build_tmp_win
-    RCC_DIR = build_tmp_win
-}
-
-RESOURCES += \
-    res.qrc
-
-OTHER_FILES += \
-    ../tmp/Selection_002.jpg \
-    ../tmp/Selection_003.jpg \
-    ../tmp/Selection_001.jpg \
-    queries.sql \
-    langs/en.ts \
-    langs/ar.ts
-
-TRANSLATIONS += ./langs/ar.ts \
-                ./langs/en.ts
-
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/OpenRPT/lib/release/ -lcommon
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/OpenRPT/lib/debug/ -lcommon
-else:unix: LIBS += -L$$PWD/OpenRPT/lib/ -lcommon
-
-INCLUDEPATH += $$PWD/OpenRPT
-DEPENDPATH += $$PWD/OpenRPT
-
-win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/OpenRPT/lib/release/common.lib
-else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/OpenRPT/lib/debug/common.lib
-else:unix: PRE_TARGETDEPS += $$PWD/OpenRPT/lib/libcommon.a
-
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/OpenRPT/lib/release/ -lDmtx_Library
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/OpenRPT/lib/debug/ -lDmtx_Library
-else:unix: LIBS += -L$$PWD/OpenRPT/lib/ -lDmtx_Library
-
-INCLUDEPATH += $$PWD/OpenRPT
-DEPENDPATH += $$PWD/OpenRPT
-
-win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/OpenRPT/lib/release/Dmtx_Library.lib
-else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/OpenRPT/lib/debug/Dmtx_Library.lib
-else:unix: PRE_TARGETDEPS += $$PWD/OpenRPT/lib/libDmtx_Library.a
-
-
+OTHER_FILES += SimpleInvoice/langs/en.ts \
+SimpleInvoice/langs/ar.ts \
+openrpt/MetaSQL/metasql_fr.ts \
+openrpt/MetaSQL/metasql_it.ts \
+openrpt/MetaSQL/metasql_ru.ts \
+openrpt/MetaSQL/metasql_es.ts \
+openrpt/OpenRPT/renderapp/renderapp_fr.ts \
+openrpt/OpenRPT/renderapp/renderapp_it.ts \
+openrpt/OpenRPT/renderapp/renderapp_ru.ts \
+openrpt/OpenRPT/renderapp/renderapp_es.ts \
+openrpt/OpenRPT/renderer/renderer_fr.ts \
+openrpt/OpenRPT/renderer/renderer_it.ts \
+openrpt/OpenRPT/renderer/renderer_ru.ts \
+openrpt/OpenRPT/renderer/renderer_es.ts \
+openrpt/OpenRPT/writer/writer_fr.ts \
+openrpt/OpenRPT/writer/writer_it.ts \
+openrpt/OpenRPT/writer/writer_ru.ts \
+openrpt/OpenRPT/writer/writer_es.ts \
+openrpt/OpenRPT/wrtembed/wrtembed_fr.ts \
+openrpt/OpenRPT/wrtembed/wrtembed_it.ts \
+openrpt/OpenRPT/wrtembed/wrtembed_ru.ts \
+openrpt/OpenRPT/wrtembed/wrtembed_es.ts \
+openrpt/common/common_es.ts \
+openrpt/common/common_fr.ts \
+openrpt/common/common_it.ts \
+openrpt/common/common_ru.ts

@@ -1,4 +1,0 @@
-openrpt
-=======
-
-OpenRPT Report Writer
