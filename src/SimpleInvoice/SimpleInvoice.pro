@@ -11,8 +11,6 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 TARGET = SimpleInvoice
 TEMPLATE = app
 
-
-
 SOURCES += main.cpp\
         mainwindow.cpp \
     dialogabout.cpp \
@@ -61,7 +59,7 @@ TRANSLATIONS += langs/ar.ts \
 include( ../openrpt/global.pri )
 
 INCLUDEPATH += ../openrpt/OpenRPT/renderapp
-DEPENDPATH += ../openrpt/OpenRPT/renderapp
+#DEPENDPATH += ../openrpt/OpenRPT/renderapp
 
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../openrpt/lib/release/ -lcommon
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../openrpt/lib/debug/ -lcommon

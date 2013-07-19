@@ -7,8 +7,8 @@
 #include "dialognew.h"
 #include "dialogsettings.h"
 
-MainWindow::MainWindow(QWidget *parent) :
-    RenderWindow(parent),
+MainWindow::MainWindow(QWidget* parent, Qt::WindowFlags fl) :
+    RenderWindow(parent, fl),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
