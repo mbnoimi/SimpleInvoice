@@ -7,7 +7,6 @@
 *.so
 *.so.*
 *.a
-*.qm
 *.pro.user*
 distro
 bin
