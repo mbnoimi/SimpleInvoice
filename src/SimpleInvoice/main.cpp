@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
 
     QTranslator translator;
     if (language == QObject::tr("English")) {
-        translator.load(":/../langs/en.qm");
+        translator.load(":/langs/langs/en.qm");
         a.installTranslator(&translator);
         a.setLayoutDirection(Qt::LeftToRight);
     } else {
-        translator.load(":/../langs/ar.qm");
+        translator.load(":/langs/langs/ar.qm");
         a.installTranslator(&translator);
         a.setLayoutDirection(Qt::RightToLeft);
     }

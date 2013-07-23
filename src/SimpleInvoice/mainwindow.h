@@ -4,20 +4,19 @@
 #include <QMainWindow>
 #include <QtWidgets>
 #include <QtSql>
-//#include "OpenRPT/renderapp/renderwindow.h"
-#include <renderwindow.h>
+#include <openrptrenderer.h>
 
 namespace Ui {
 class MainWindow;
 }
 
-class MainWindow : /*public QMainWindow
-        ,*/ public RenderWindow
+class MainWindow : public QMainWindow
+//        , public RenderWindow
 {
     Q_OBJECT
     
 public:
-    explicit MainWindow(QWidget *parent = 0, Qt::WindowFlags fl = 0);
+    explicit MainWindow(QWidget *parent = 0/*, Qt::WindowFlags fl = 0*/);
     ~MainWindow();
     
 protected:

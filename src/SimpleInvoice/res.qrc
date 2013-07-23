@@ -13,7 +13,10 @@
         <file>res/edit-delete.png</file>
         <file>res/application-pdf.png</file>
     </qresource>
-    <qresource prefix="/langs"/>
+    <qresource prefix="/langs">
+        <file>langs/ar.qm</file>
+        <file>langs/en.qm</file>
+    </qresource>
     <qresource prefix="/reports">
         <file>report.xml</file>
     </qresource>

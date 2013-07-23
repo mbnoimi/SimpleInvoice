@@ -7,8 +7,9 @@
 #include "dialognew.h"
 #include "dialogsettings.h"
 
-MainWindow::MainWindow(QWidget* parent, Qt::WindowFlags fl) :
-    RenderWindow(parent, fl),
+MainWindow::MainWindow(QWidget* parent/*, Qt::WindowFlags fl*/) :
+//    RenderWindow(parent, fl),
+    QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -166,14 +167,14 @@ void MainWindow::print(int id, QString filePath)
     //        QMessageBox::critical(this, tr("Error!"), tr("Unable to load OpenRPT!"));
     //    }
 
-    fileOpen(":/reports/report.xml");
-    if (filePath.isEmpty()) {
-        // To printer
-        filePrint();
-    } else {
-        // To pdf file
-        filePrintToPDF(filePath);
-    }
+//    fileOpen(":/reports/report.xml");
+//    if (filePath.isEmpty()) {
+//        // To printer
+//        filePrint();
+//    } else {
+//        // To pdf file
+//        filePrintToPDF(filePath);
+//    }
 }
 
 void MainWindow::on_toolButton_cancel_clicked()
@@ -224,6 +225,7 @@ void MainWindow::on_actionPrint_triggered()
     int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
     if (id > 0) {
         print(id);
+//        OpenrptRenderer oRender;
     }
 
 }
@@ -233,6 +235,8 @@ void MainWindow::on_actionSaveAsPDF_triggered()
     int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
     QString pdfPath = QFileDialog::getSaveFileName(this, tr("Select PDF path..."), ".", tr("PDF (*.pdf)"));
     if (id > 0 && !pdfPath.isEmpty()) {
-        print(id, pdfPath);
+        OpenrptRenderer render;
+        render.fileOpen(":/reports/report.xml");
+        render.filePrintToPDF(pdfPath, _db);
     }
 }

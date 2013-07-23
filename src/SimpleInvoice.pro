@@ -7,11 +7,13 @@
 TEMPLATE = subdirs
 
 SUBDIRS = openrpt \
+OpenrptRenderer \
 SimpleInvoice
 
 CONFIG += ordered
 
 OTHER_FILES = SimpleInvoice/langs/ar.ts \
+SimpleInvoice/langs/en.ts \
 openrpt/MetaSQL/metasql_fr.ts \
 openrpt/MetaSQL/metasql_it.ts \
 openrpt/MetaSQL/metasql_ru.ts \

@@ -29,14 +29,14 @@ FORMS    += mainwindow.ui \
     dialogsettings.ui
 
 unix {
-    DESTDIR = ../../../bin/lin
+    DESTDIR = ../../bin/lin
     MOC_DIR = build_tmp_lin
     UI_DIR = build_tmp_lin
     OBJECTS_DIR = build_tmp_lin
     RCC_DIR = build_tmp_lin
 }
 win32 {
-    DESTDIR = ../../../bin/win32
+    DESTDIR = ../../bin/win32
     MOC_DIR = build_tmp_win
     UI_DIR = build_tmp_win
     OBJECTS_DIR = build_tmp_win
@@ -56,40 +56,15 @@ OTHER_FILES += \
 TRANSLATIONS += langs/ar.ts \
                 langs/en.ts
 
-include( ../openrpt/global.pri )
 
-INCLUDEPATH += ../openrpt/OpenRPT/renderapp
-#DEPENDPATH += ../openrpt/OpenRPT/renderapp
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../openrpt/lib/release/ -lcommon
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../openrpt/lib/debug/ -lcommon
-else:unix: LIBS += -L$$PWD/../openrpt/lib/ -lcommon
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../OpenrptRenderer/lib/release/ -lOpenrptRenderer
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../OpenrptRenderer/lib/debug/ -lOpenrptRenderer
+else:unix: LIBS += -L$$PWD/../OpenrptRenderer/lib/ -lOpenrptRenderer
 
-INCLUDEPATH += $$PWD/../openrpt/common
-DEPENDPATH += $$PWD/../openrpt/common
+INCLUDEPATH += $$PWD/../OpenrptRenderer
+DEPENDPATH += $$PWD/../OpenrptRenderer
 
-win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../openrpt/lib/release/common.lib
-else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../openrpt/lib/debug/common.lib
-else:unix: PRE_TARGETDEPS += $$PWD/../openrpt/lib/libcommon.a
-
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../openrpt/lib/release/ -lDmtx_Library
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../openrpt/lib/debug/ -lDmtx_Library
-else:unix: LIBS += -L$$PWD/../openrpt/lib/ -lDmtx_Library
-
-INCLUDEPATH += $$PWD/../openrpt/OpenRPT/Dmtx_Library
-DEPENDPATH += $$PWD/../openrpt/OpenRPT/Dmtx_Library
-
-win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../openrpt/lib/release/Dmtx_Library.lib
-else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../openrpt/lib/debug/Dmtx_Library.lib
-else:unix: PRE_TARGETDEPS += $$PWD/../openrpt/lib/libDmtx_Library.a
-
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../openrpt/lib/release/ -lrenderer
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../openrpt/lib/debug/ -lrenderer
-else:unix: LIBS += -L$$PWD/../openrpt/lib/ -lrenderer
-
-INCLUDEPATH += $$PWD/../openrpt/OpenRPT/renderer
-DEPENDPATH += $$PWD/../openrpt/OpenRPT/renderer
-
-win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../openrpt/lib/release/renderer.lib
-else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../openrpt/lib/debug/renderer.lib
-else:unix: PRE_TARGETDEPS += $$PWD/../openrpt/lib/librenderer.a
+win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../OpenrptRenderer/lib/release/OpenrptRenderer.lib
+else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../OpenrptRenderer/lib/debug/OpenrptRenderer.lib
+else:unix: PRE_TARGETDEPS += $$PWD/../OpenrptRenderer/lib/libOpenrptRenderer.a
