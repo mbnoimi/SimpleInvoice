@@ -15,13 +15,15 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     dialogabout.cpp \
     dialognew.cpp \
-    dialogsettings.cpp
+    dialogsettings.cpp \
+    openrptrenderer.cpp
 
 HEADERS  += mainwindow.h \
     dialogabout.h \
     queries.h \
     dialognew.h \
-    dialogsettings.h
+    dialogsettings.h \
+    openrptrenderer.h
 
 FORMS    += mainwindow.ui \
     dialogabout.ui \
@@ -57,14 +59,16 @@ TRANSLATIONS += langs/ar.ts \
                 langs/en.ts
 
 
+###################################### OpenRPT #############################################33
+include( ../openrpt/global.pri )
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../OpenrptRenderer/lib/release/ -lOpenrptRenderer
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../OpenrptRenderer/lib/debug/ -lOpenrptRenderer
-else:unix: LIBS += -L$$PWD/../OpenrptRenderer/lib/ -lOpenrptRenderer
 
-INCLUDEPATH += $$PWD/../OpenrptRenderer
-DEPENDPATH += $$PWD/../OpenrptRenderer
+LIBS += -L../openrpt/lib -lrenderer -lcommon -lDmtx_Library
 
-win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../OpenrptRenderer/lib/release/OpenrptRenderer.lib
-else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../OpenrptRenderer/lib/debug/OpenrptRenderer.lib
-else:unix: PRE_TARGETDEPS += $$PWD/../OpenrptRenderer/lib/libOpenrptRenderer.a
+win32-msvc* {
+  PRE_TARGETDEPS += ../openrpt/lib/common.lib   \
+                    ../openrpt/lib/renderer.lib
+} else {
+  PRE_TARGETDEPS += ../openrpt/lib/libcommon.a   \
+                    ../openrpt/lib/librenderer.a
+}

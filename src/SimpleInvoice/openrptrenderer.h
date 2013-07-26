@@ -26,7 +26,6 @@ public:
     OpenrptRenderer();
     virtual void fileOpen( const QString & filename );
     virtual void filePreview( int numCopies = 1 );
-    virtual void filePrint( int numCopies = 1 );
     virtual void filePrintToPDF(QString & pdfFileName , QSqlDatabase database);
 
     QString _printerName;

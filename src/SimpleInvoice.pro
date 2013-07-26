@@ -7,7 +7,6 @@
 TEMPLATE = subdirs
 
 SUBDIRS = openrpt \
-OpenrptRenderer \
 SimpleInvoice
 
 CONFIG += ordered
