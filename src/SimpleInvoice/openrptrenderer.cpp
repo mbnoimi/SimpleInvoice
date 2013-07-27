@@ -1,14 +1,33 @@
 #include "openrptrenderer.h"
 
 
-OpenrptRenderer::OpenrptRenderer()
+OpenrptRenderer::OpenrptRenderer(QSqlDatabase database)
     : QObject()
 {
-    qDebug() << "Hi from Static lib";
     _autoPrint = false;
+    _database = database;
 }
 
-void OpenrptRenderer::fileOpen(const QString &filename)
+void OpenrptRenderer::printToPDF(QString &pdfFileName, QString reportName, ParameterList params)
+{
+    if(pdfFileName.isEmpty())
+        return;
+
+    if ( QFileInfo( pdfFileName ).suffix().isEmpty() )
+        pdfFileName.append(".pdf");
+
+    ORPreRender pre(_database);
+    openReport(reportName);
+    pre.setDom(_doc);
+    pre.setParamList(params);
+    ORODocument *doc = pre.generate();
+    if (doc) {
+        ORPrintRender::exportToPDF(doc, pdfFileName);
+        delete doc;
+    }
+}
+
+void OpenrptRenderer::openReport(const QString &filename)
 {
     QDomDocument doc;
     QString errMsg;
@@ -116,7 +135,6 @@ void OpenrptRenderer::setDocument(const QDomDocument &doc)
     }
 }
 
-
 void OpenrptRenderer::print(bool showPreview, int numCopies)
 {
     ORPreRender pre;
@@ -168,26 +186,6 @@ void OpenrptRenderer::print(bool showPreview, int numCopies)
                 render.render(doc, &printer);
             }
         }
-        delete doc;
-    }
-}
-
-
-void OpenrptRenderer::filePrintToPDF(QString &pdfFileName, QSqlDatabase database)
-{
-
-    // code taken from original code of the member [ void RenderWindow::filePrintToPDF() ]
-    if(pdfFileName.isEmpty())
-        return;
-
-    if ( QFileInfo( pdfFileName ).suffix().isEmpty() )
-        pdfFileName.append(".pdf");
-
-    ORPreRender pre(database);
-    pre.setDom(_doc);
-    ORODocument *doc = pre.generate();
-    if (doc) {
-        ORPrintRender::exportToPDF(doc, pdfFileName);
         delete doc;
     }
 }

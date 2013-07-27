@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/icons">
+    <qresource prefix="/res">
         <file>res/advancedsettings.png</file>
         <file>res/application-exit.png</file>
         <file>res/document-new.png</file>
@@ -17,7 +17,8 @@
         <file>langs/ar.qm</file>
         <file>langs/en.qm</file>
     </qresource>
-    <qresource prefix="/reports">
-        <file>report.xml</file>
+    <qresource prefix="/templates">
+        <file>templates/database.db</file>
+        <file>templates/report.xml</file>
     </qresource>
 </RCC>

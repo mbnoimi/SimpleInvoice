@@ -22,6 +22,17 @@ int main(int argc, char *argv[])
         a.setLayoutDirection(Qt::RightToLeft);
     }
 
+    QString reportFile = a.applicationDirPath()+"/report.xml";
+    QString databaseFile = a.applicationDirPath()+"/database.db";
+
+    if (!QFile::exists(reportFile)) {
+        QFile::copy(":/templates/templates/report.xml", reportFile);
+        settings.setValue("main/report", reportFile);
+    }
+
+    if (!QFile::exists(databaseFile))
+        QFile::copy(":/templates/templates/database.db", databaseFile);
+
     MainWindow w;
     w.show();
     

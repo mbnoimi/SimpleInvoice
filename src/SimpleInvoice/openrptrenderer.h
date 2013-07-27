@@ -8,6 +8,7 @@
 #include <QtPrintSupport>
 
 #include <../openrpt/common/xsqlquery.h>
+#include <../openrpt/common/parameter.h>
 #include <../openrpt/common/parameterproperties.h>
 #include <../openrpt/common/data.h>
 #include <../openrpt/common/parsexmlutils.h>
@@ -23,10 +24,9 @@ class OpenrptRenderer : public QObject
     Q_OBJECT
 
 public:
-    OpenrptRenderer();
-    virtual void fileOpen( const QString & filename );
-    virtual void filePreview( int numCopies = 1 );
-    virtual void filePrintToPDF(QString & pdfFileName , QSqlDatabase database);
+    OpenrptRenderer(QSqlDatabase database);
+    void printToPDF(QString & pdfFileName , QString reportName, ParameterList params = ParameterList());
+    void filePreview( int numCopies = 1 );
 
     QString _printerName;
     bool _autoPrint;
@@ -39,7 +39,9 @@ protected:
 
 private:
     void print(bool showPreview, int numCopies);
+    void openReport( const QString & filename );
     void setDocument( const QDomDocument & doc);
+    QSqlDatabase _database;
 };
 
 #endif // OPENRPTRENDERER_H

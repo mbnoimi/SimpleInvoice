@@ -3,7 +3,7 @@
  <title>Simple Invoice</title>
  <name>Simple Invoice by Muhammad Bashir Al-Noimi</name>
  <description></description>
- <parameter default="1" active="true" listtype="static" type="string" name="invoice_id">
+ <parameter type="string" name="invoice_id" listtype="static" default="1" active="true">
   <description></description>
  </parameter>
  <grid>
@@ -65,6 +65,19 @@ data.id = &lt;? value("invoice_id") ?></sql>
     <query>invoice</query>
    </key>
    <height>185</height>
+   <rect>
+    <x>284</x>
+    <y>16</y>
+    <width>100</width>
+    <height>160</height>
+    <weight>1</weight>
+    <borderwidth>1</borderwidth>
+    <bgcolor>
+     <red>35</red>
+     <green>229</green>
+     <blue>113</blue>
+    </bgcolor>
+   </rect>
    <field>
     <rect>
      <x>480</x>
@@ -84,6 +97,22 @@ data.id = &lt;? value("invoice_id") ?></sql>
      <column>title</column>
     </data>
    </field>
+   <label>
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+    <font>
+     <face></face>
+     <size>9</size>
+     <weight>normal</weight>
+    </font>
+    <left/>
+    <top/>
+    <string>Hello</string>
+   </label>
   </detail>
  </section>
 </report>

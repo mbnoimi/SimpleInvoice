@@ -22,6 +22,8 @@ protected:
 private slots:
     void on_pushButton_close_clicked();
 
+    void on_toolButton_browse_clicked();
+
 private:
     Ui::DialogSettings *ui;
 };

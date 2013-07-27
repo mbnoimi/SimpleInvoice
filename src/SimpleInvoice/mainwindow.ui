@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="res.qrc">
-    <normaloff>:/icons/res/kword.png</normaloff>:/icons/res/kword.png</iconset>
+    <normaloff>:/res/res/kword.png</normaloff>:/res/res/kword.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QTabWidget::tab-bar {
@@ -187,7 +187,7 @@
            </property>
            <property name="icon">
             <iconset resource="res.qrc">
-             <normaloff>:/icons/res/dialog-ok-apply.png</normaloff>:/icons/res/dialog-ok-apply.png</iconset>
+             <normaloff>:/res/res/dialog-ok-apply.png</normaloff>:/res/res/dialog-ok-apply.png</iconset>
            </property>
           </widget>
          </item>
@@ -204,7 +204,7 @@
            </property>
            <property name="icon">
             <iconset resource="res.qrc">
-             <normaloff>:/icons/res/dialog-cancel.png</normaloff>:/icons/res/dialog-cancel.png</iconset>
+             <normaloff>:/res/res/dialog-cancel.png</normaloff>:/res/res/dialog-cancel.png</iconset>
            </property>
           </widget>
          </item>
@@ -270,7 +270,7 @@
   <action name="actionNew">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/icons/res/document-new.png</normaloff>:/icons/res/document-new.png</iconset>
+     <normaloff>:/res/res/document-new.png</normaloff>:/res/res/document-new.png</iconset>
    </property>
    <property name="text">
     <string>New</string>
@@ -282,7 +282,7 @@
   <action name="actionOpen">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/icons/res/document-open-folder.png</normaloff>:/icons/res/document-open-folder.png</iconset>
+     <normaloff>:/res/res/document-open-folder.png</normaloff>:/res/res/document-open-folder.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -294,7 +294,7 @@
   <action name="actionExit">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/icons/res/application-exit.png</normaloff>:/icons/res/application-exit.png</iconset>
+     <normaloff>:/res/res/application-exit.png</normaloff>:/res/res/application-exit.png</iconset>
    </property>
    <property name="text">
     <string>Exit</string>
@@ -309,7 +309,7 @@
   <action name="actionSettings">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/icons/res/advancedsettings.png</normaloff>:/icons/res/advancedsettings.png</iconset>
+     <normaloff>:/res/res/advancedsettings.png</normaloff>:/res/res/advancedsettings.png</iconset>
    </property>
    <property name="text">
     <string>Settings</string>
@@ -321,7 +321,7 @@
   <action name="actionAbout">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/icons/res/help-about.png</normaloff>:/icons/res/help-about.png</iconset>
+     <normaloff>:/res/res/help-about.png</normaloff>:/res/res/help-about.png</iconset>
    </property>
    <property name="text">
     <string>About</string>
@@ -330,7 +330,7 @@
   <action name="actionPrint">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/icons/res/document-print.png</normaloff>:/icons/res/document-print.png</iconset>
+     <normaloff>:/res/res/document-print.png</normaloff>:/res/res/document-print.png</iconset>
    </property>
    <property name="text">
     <string>print</string>
@@ -342,7 +342,7 @@
   <action name="actionSaveAsPDF">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/icons/res/application-pdf.png</normaloff>:/icons/res/application-pdf.png</iconset>
+     <normaloff>:/res/res/application-pdf.png</normaloff>:/res/res/application-pdf.png</iconset>
    </property>
    <property name="text">
     <string>Save As PDF</string>

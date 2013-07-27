@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>119</height>
+    <height>130</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,11 +15,21 @@
   </property>
   <property name="windowIcon">
    <iconset resource="res.qrc">
-    <normaloff>:/icons/res/advancedsettings.png</normaloff>:/icons/res/advancedsettings.png</iconset>
+    <normaloff>:/res/res/advancedsettings.png</normaloff>:/res/res/advancedsettings.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Report path:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="lineEdit_reportPath"/>
+     </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label">
        <property name="text">
@@ -27,7 +37,28 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Currency:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QToolButton" name="toolButton_browse">
+       <property name="text">
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_currency">
+       <property name="text">
+        <string>L.D.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" colspan="2">
       <widget class="QComboBox" name="comboBox_language">
        <item>
         <property name="text">
@@ -41,34 +72,7 @@
        </item>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>Currency:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_currency">
-       <property name="text">
-        <string>L.D.</string>
-       </property>
-      </widget>
-     </item>
     </layout>
-   </item>
-   <item>
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
    </item>
    <item>
     <widget class="QWidget" name="widget" native="true">
