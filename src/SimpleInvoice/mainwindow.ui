@@ -231,6 +231,8 @@
     <addaction name="actionNew"/>
     <addaction name="actionOpen"/>
     <addaction name="actionSaveAsPDF"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint_Preview"/>
     <addaction name="actionPrint"/>
     <addaction name="separator"/>
     <addaction name="actionSettings"/>
@@ -259,6 +261,7 @@
    <addaction name="actionNew"/>
    <addaction name="actionOpen"/>
    <addaction name="actionSaveAsPDF"/>
+   <addaction name="actionPrint_Preview"/>
    <addaction name="actionPrint"/>
    <addaction name="separator"/>
    <addaction name="actionSettings"/>
@@ -333,7 +336,7 @@
      <normaloff>:/res/res/document-print.png</normaloff>:/res/res/document-print.png</iconset>
    </property>
    <property name="text">
-    <string>print</string>
+    <string>Print</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+P</string>
@@ -346,6 +349,18 @@
    </property>
    <property name="text">
     <string>Save As PDF</string>
+   </property>
+  </action>
+  <action name="actionPrint_Preview">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/res/document-preview.png</normaloff>:/res/res/document-preview.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print Preview</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Alt+P</string>
    </property>
   </action>
  </widget>

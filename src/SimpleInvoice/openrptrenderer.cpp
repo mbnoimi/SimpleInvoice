@@ -27,6 +27,64 @@ void OpenrptRenderer::printToPDF(QString &pdfFileName, QString reportName, Param
     }
 }
 
+void OpenrptRenderer::print(int numCopies, QString reportName, ParameterList params, bool preview)
+{
+    ORPreRender pre(_database);
+    openReport(reportName);
+    pre.setDom(_doc) ;
+    pre.setParamList(params);
+    ORODocument * doc = pre.generate();
+
+    if(doc)
+    {
+        ReportPrinter printer(QPrinter::HighResolution);
+#if QT_VERSION < 0x040700 // if qt < 4.7.0 then use the old function call.
+        printer.setNumCopies( numCopies );
+#else
+        printer.setCopyCount( numCopies );
+#endif
+        if(!_printerName.isEmpty())
+        {
+            printer.setPrinterName(_printerName);
+            _printerName = QString::null;
+        }
+
+        ORPrintRender render;
+        render.setupPrinter(doc, &printer);
+
+        //FIXME: Don't forget to use Qt print preview instead
+        if(preview)
+        {
+            if(printer.printerName().isEmpty())
+            {
+                QPrintDialog pd(&printer);
+                if(pd.exec() != QDialog::Accepted)
+                {
+                    return; // no printer, can't preview
+                }
+            }
+            PreviewDialog preview (doc, &printer);
+            if (preview.exec() == QDialog::Rejected)
+                return;
+        }
+
+        if(_autoPrint)
+        {
+            render.render(doc, &printer);
+        }
+        else
+        {
+            QPrintDialog pd(&printer);
+            pd.setMinMax(1, doc->pages());
+            if(pd.exec() == QDialog::Accepted)
+            {
+                render.render(doc, &printer);
+            }
+        }
+        delete doc;
+    }
+}
+
 void OpenrptRenderer::openReport(const QString &filename)
 {
     QDomDocument doc;
@@ -51,12 +109,6 @@ void OpenrptRenderer::openReport(const QString &filename)
 
     setDocument(doc);
 }
-
-void OpenrptRenderer::filePreview(int numCopies)
-{
-    print(true, numCopies);
-}
-
 
 void OpenrptRenderer::setDocument(const QDomDocument &doc)
 {

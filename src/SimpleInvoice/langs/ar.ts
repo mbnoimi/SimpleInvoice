@@ -1462,7 +1462,7 @@ For more information on this, and how to apply and follow the GNU AGPL, see
     <message>
         <location filename="../dialognew.ui" line="247"/>
         <source>Serial number</source>
-        <translation>رقم متسلسل للجهاز...</translation>
+        <translation>رقم متسلسل للجهاز</translation>
     </message>
     <message>
         <location filename="../dialognew.ui" line="260"/>
@@ -1559,35 +1559,50 @@ For more information on this, and how to apply and follow the GNU AGPL, see
     </message>
     <message>
         <location filename="../dialogsettings.ui" line="26"/>
+        <source>Report path:</source>
+        <translation>مسار التقرير:</translation>
+    </message>
+    <message>
+        <location filename="../dialogsettings.ui" line="36"/>
         <source>Language:</source>
         <translation>لغة:</translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="34"/>
+        <location filename="../dialogsettings.ui" line="50"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="../dialogsettings.ui" line="65"/>
         <source>Arabic</source>
         <translation>عربي</translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="39"/>
+        <location filename="../dialogsettings.ui" line="70"/>
         <location filename="../dialogsettings.cpp" line="11"/>
         <source>English</source>
         <translation>English</translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="47"/>
+        <location filename="../dialogsettings.ui" line="43"/>
         <source>Currency:</source>
         <translation>عملة:</translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="54"/>
+        <location filename="../dialogsettings.ui" line="57"/>
         <location filename="../dialogsettings.cpp" line="12"/>
         <source>L.D.</source>
         <translation>دينار ليبي</translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="104"/>
+        <location filename="../dialogsettings.ui" line="108"/>
         <source>Close</source>
         <translation>إغلاق</translation>
+    </message>
+    <message>
+        <location filename="../dialogsettings.cpp" line="44"/>
+        <source>Select report file</source>
+        <translation>قم بتحديد ملف التقرير</translation>
     </message>
 </context>
 <context>
@@ -1649,64 +1664,78 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation>ملف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="242"/>
+        <location filename="../mainwindow.ui" line="244"/>
         <source>Help</source>
         <translation>مساعدة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="276"/>
+        <location filename="../mainwindow.ui" line="279"/>
         <source>New</source>
         <translation>جديد</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="279"/>
+        <location filename="../mainwindow.ui" line="282"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="288"/>
+        <location filename="../mainwindow.ui" line="291"/>
         <source>Open</source>
         <translation>فتح</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="291"/>
+        <location filename="../mainwindow.ui" line="294"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="300"/>
         <location filename="../mainwindow.ui" line="303"/>
+        <location filename="../mainwindow.ui" line="306"/>
         <source>Exit</source>
         <translation>خروج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="306"/>
+        <location filename="../mainwindow.ui" line="309"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="315"/>
         <location filename="../mainwindow.ui" line="318"/>
+        <location filename="../mainwindow.ui" line="321"/>
         <source>Settings</source>
         <translation>إعدادات</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="327"/>
+        <location filename="../mainwindow.ui" line="330"/>
         <source>About</source>
         <translation>حول</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="336"/>
-        <source>print</source>
+        <location filename="../mainwindow.ui" line="339"/>
+        <source>Print</source>
         <translation>طباعة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="339"/>
+        <location filename="../mainwindow.ui" line="360"/>
+        <source>Print Preview</source>
+        <translation>معاينة قبل الطباعة</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="363"/>
+        <source>Meta+Alt+P</source>
+        <translation>Meta+Alt+P</translation>
+    </message>
+    <message>
+        <source>print</source>
+        <translation type="obsolete">طباعة</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="342"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="348"/>
+        <location filename="../mainwindow.ui" line="351"/>
         <source>Save As PDF</source>
         <translation>حفظ كـ PDF</translation>
     </message>
@@ -1771,19 +1800,74 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation>د.ل.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="214"/>
+        <location filename="../mainwindow.cpp" line="175"/>
         <source>%1 : Item(s)</source>
         <translation>%1 : بند</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="187"/>
+        <source>Copies</source>
+        <translation>نُسخ</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="187"/>
+        <source>Input number of copies</source>
+        <translation>أدخل عدد النسخ</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>Select PDF path...</source>
         <translation>قم بتحديد مسار ألـPDF...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>PDF (*.pdf)</source>
         <translation>PDF (*.pdf)</translation>
+    </message>
+</context>
+<context>
+    <name>OpenrptRenderer</name>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="96"/>
+        <source>Error Loading File</source>
+        <translation>خطأ أثناء فتح الملف</translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="97"/>
+        <source>There was an error opening the file %1.
+
+%2 on line %3 column %4.</source>
+        <translation>There was an error opening the file %1.
+
+%2 on line %3 column %4.</translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="105"/>
+        <source>Not a Valid File</source>
+        <translation>Not a Valid File</translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="106"/>
+        <source>The file %1 does not appear to be a valid file.
+
+The root node is not &apos;report&apos;.</source>
+        <translation>The file %1 does not appear to be a valid file.
+
+The root node is not &apos;report&apos;.</translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="122"/>
+        <source>Not a Valid Report</source>
+        <translation>Not a Valid Report</translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="123"/>
+        <source>The report definition does not appear to be a valid report.
+
+The root node is not &apos;report&apos;.</source>
+        <translation>The report definition does not appear to be a valid report.
+
+The root node is not &apos;report&apos;.</translation>
     </message>
 </context>
 <context>

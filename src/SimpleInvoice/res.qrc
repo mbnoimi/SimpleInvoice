@@ -12,6 +12,7 @@
         <file>res/document-print.png</file>
         <file>res/edit-delete.png</file>
         <file>res/application-pdf.png</file>
+        <file>res/document-preview.png</file>
     </qresource>
     <qresource prefix="/langs">
         <file>langs/ar.qm</file>

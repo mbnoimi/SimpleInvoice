@@ -137,45 +137,6 @@ void MainWindow::updateData()
     }
 }
 
-void MainWindow::print(int id, QString filePath)
-{
-    // TODO:
-    //    QDir::setCurrent(qApp->applicationDirPath()+"/OpenRPT");
-    //            qDebug() << "CurrentPath:" << QDir::currentPath();
-
-    //    QStringList args;
-    //    args << "-databaseURL=\"QSQLITE:///../database.db\""
-    //         << "-noAuth"
-    //         << "-close"
-    //         << QString("-Param=invoice_id:string='%1'").arg(id)
-    //         << "./reports/report.xml";
-
-    //    if (filePath.isEmpty()) {
-    //        args << "-print";
-    //    } else {
-    //        args << "-pdf"
-    //             << QString("-outpdf=\"%1\"").arg(filePath);
-    //    }
-    //    if (!QProcess::startDetached(
-    //            #ifdef Q_OS_WIN
-    //                "./rptrender.bat"
-    //            #else
-    //                "./rptrender.sh"
-    //            #endif
-    //                , args)) {
-    //        QMessageBox::critical(this, tr("Error!"), tr("Unable to load OpenRPT!"));
-    //    }
-
-    //    fileOpen(":/reports/report.xml");
-    //    if (filePath.isEmpty()) {
-    //        // To printer
-    //        filePrint();
-    //    } else {
-    //        // To pdf file
-    //        filePrintToPDF(filePath);
-    //    }
-}
-
 void MainWindow::on_toolButton_cancel_clicked()
 {
     updateData();
@@ -221,11 +182,20 @@ void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 
 void MainWindow::on_actionPrint_triggered()
 {
-    // TODO:
     int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
     if (id > 0) {
-        print(id);
-        //        OpenrptRenderer oRender;
+        int copies = QInputDialog::getInt(this, tr("Copies"), tr("Input number of copies"), 1);
+        if (copies > 0) {
+            OpenrptRenderer render(_db);
+
+            ParameterList params;
+            params.append("invoice_id", id);
+
+            QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
+            QString reportFile = settings.value("main/report", qApp->applicationDirPath()+"/report.xml").toString();
+
+            render.print(copies, reportFile, params);
+        }
     }
 
 }
@@ -245,4 +215,22 @@ void MainWindow::on_actionSaveAsPDF_triggered()
 
         render.printToPDF(pdfPath, reportFile, params);
     }
+}
+
+void MainWindow::on_actionPrint_Preview_triggered()
+{
+    //TODO: Activate after supporting Qt print preview
+//    int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
+//    if (id > 0) {
+
+//        OpenrptRenderer render(_db);
+
+//        ParameterList params;
+//        params.append("invoice_id", id);
+
+//        QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
+//        QString reportFile = settings.value("main/report", qApp->applicationDirPath()+"/report.xml").toString();
+
+//        render.print(1, reportFile, params, 1);
+//    }
 }

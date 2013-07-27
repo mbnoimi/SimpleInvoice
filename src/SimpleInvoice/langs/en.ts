@@ -870,34 +870,49 @@ For more information on this, and how to apply and follow the GNU AGPL, see
     </message>
     <message>
         <location filename="../dialogsettings.ui" line="26"/>
+        <source>Report path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogsettings.ui" line="36"/>
         <source>Language:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="34"/>
+        <location filename="../dialogsettings.ui" line="50"/>
+        <source>...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogsettings.ui" line="65"/>
         <source>Arabic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="39"/>
+        <location filename="../dialogsettings.ui" line="70"/>
         <location filename="../dialogsettings.cpp" line="11"/>
         <source>English</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="47"/>
+        <location filename="../dialogsettings.ui" line="43"/>
         <source>Currency:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="54"/>
+        <location filename="../dialogsettings.ui" line="57"/>
         <location filename="../dialogsettings.cpp" line="12"/>
         <source>L.D.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogsettings.ui" line="104"/>
+        <location filename="../dialogsettings.ui" line="108"/>
         <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogsettings.cpp" line="44"/>
+        <source>Select report file</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -960,64 +975,74 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="242"/>
+        <location filename="../mainwindow.ui" line="244"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="276"/>
+        <location filename="../mainwindow.ui" line="279"/>
         <source>New</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="279"/>
+        <location filename="../mainwindow.ui" line="282"/>
         <source>Ctrl+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="288"/>
+        <location filename="../mainwindow.ui" line="291"/>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="291"/>
+        <location filename="../mainwindow.ui" line="294"/>
         <source>Ctrl+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="300"/>
         <location filename="../mainwindow.ui" line="303"/>
+        <location filename="../mainwindow.ui" line="306"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="306"/>
+        <location filename="../mainwindow.ui" line="309"/>
         <source>Ctrl+Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="315"/>
         <location filename="../mainwindow.ui" line="318"/>
+        <location filename="../mainwindow.ui" line="321"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="327"/>
+        <location filename="../mainwindow.ui" line="330"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="336"/>
-        <source>print</source>
+        <location filename="../mainwindow.ui" line="339"/>
+        <source>Print</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="339"/>
+        <location filename="../mainwindow.ui" line="360"/>
+        <source>Print Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="363"/>
+        <source>Meta+Alt+P</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="342"/>
         <source>Ctrl+P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="348"/>
+        <location filename="../mainwindow.ui" line="351"/>
         <source>Save As PDF</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1082,18 +1107,67 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="214"/>
+        <location filename="../mainwindow.cpp" line="175"/>
         <source>%1 : Item(s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="187"/>
+        <source>Copies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="187"/>
+        <source>Input number of copies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>Select PDF path...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>PDF (*.pdf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>OpenrptRenderer</name>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="96"/>
+        <source>Error Loading File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="97"/>
+        <source>There was an error opening the file %1.
+
+%2 on line %3 column %4.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="105"/>
+        <source>Not a Valid File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="106"/>
+        <source>The file %1 does not appear to be a valid file.
+
+The root node is not &apos;report&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="122"/>
+        <source>Not a Valid Report</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../openrptrenderer.cpp" line="123"/>
+        <source>The report definition does not appear to be a valid report.
+
+The root node is not &apos;report&apos;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
