@@ -220,17 +220,17 @@ void MainWindow::on_actionSaveAsPDF_triggered()
 void MainWindow::on_actionPrint_Preview_triggered()
 {
     //TODO: Activate after supporting Qt print preview
-//    int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
-//    if (id > 0) {
+    int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
+    if (id > 0) {
 
-//        OpenrptRenderer render(_db);
+        OpenrptRenderer render(_db);
 
-//        ParameterList params;
-//        params.append("invoice_id", id);
+        ParameterList params;
+        params.append("invoice_id", id);
 
-//        QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
-//        QString reportFile = settings.value("main/report", qApp->applicationDirPath()+"/report.xml").toString();
+        QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
+        QString reportFile = settings.value("main/report", qApp->applicationDirPath()+"/report.xml").toString();
 
-//        render.print(1, reportFile, params, 1);
-//    }
+        render.print(1, reportFile, params, 1);
+    }
 }

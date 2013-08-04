@@ -25,8 +25,10 @@ class OpenrptRenderer : public QObject
 
 public:
     OpenrptRenderer(QSqlDatabase database);
-    void printToPDF(QString & pdfFileName , QString reportName, ParameterList params = ParameterList());
-    void print(int numCopies, QString reportName, ParameterList params = ParameterList(), bool preview = 0);
+    void printToPDF(QString & pdfFileName , QString reportName,
+                    ParameterList params = ParameterList());
+    void print(int numCopies, QString reportName,
+               ParameterList params = ParameterList(), bool preview = 0);
 
     QString _printerName;
     bool _autoPrint;

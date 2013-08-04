@@ -1,0 +1,118 @@
+<!DOCTYPE openRPTDef>
+<report>
+ <title>Simple Invoice</title>
+ <name>Simple Invoice by Muhammad Bashir Al-Noimi</name>
+ <description></description>
+ <parameter type="string" name="invoice_id" listtype="static" default="1" active="true">
+  <description></description>
+ </parameter>
+ <grid>
+  <snap/>
+  <show/>
+  <x>0.05</x>
+  <y>0.05</y>
+ </grid>
+ <size>Letter</size>
+ <portrait/>
+ <topmargin>100</topmargin>
+ <bottommargin>100</bottommargin>
+ <rightmargin>100</rightmargin>
+ <leftmargin>100</leftmargin>
+ <querysource>
+  <name>all</name>
+  <sql>SELECT
+data.id,
+data.title,
+data.device,
+data.description,
+data.cost,
+data.recived,
+data.status,
+data.note
+FROM
+data
+ORDER BY
+data.id DESC</sql>
+ </querysource>
+ <querysource>
+  <name>invoice</name>
+  <sql>SELECT
+data.id,
+data.title,
+data.device,
+data.cost,
+data.description,
+data.recived,
+data.model,
+data.note,
+data.serial,
+data.sent,
+data.phone,
+data.status
+FROM
+data
+WHERE
+data.id = &lt;? value("invoice_id") ?></sql>
+ </querysource>
+ <section>
+  <name>unnamed</name>
+  <group>
+   <name>unnamed</name>
+   <column></column>
+  </group>
+  <detail>
+   <key>
+    <query>invoice</query>
+   </key>
+   <height>185</height>
+   <rect>
+    <x>284</x>
+    <y>16</y>
+    <width>100</width>
+    <height>160</height>
+    <weight>1</weight>
+    <borderwidth>1</borderwidth>
+    <bgcolor>
+     <red>35</red>
+     <green>229</green>
+     <blue>113</blue>
+    </bgcolor>
+   </rect>
+   <field>
+    <rect>
+     <x>480</x>
+     <y>130</y>
+     <width>145</width>
+     <height>25</height>
+    </rect>
+    <font>
+     <face>Helvetica</face>
+     <size>12</size>
+     <weight>normal</weight>
+    </font>
+    <left/>
+    <top/>
+    <data>
+     <query>invoice</query>
+     <column>title</column>
+    </data>
+   </field>
+   <label>
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+    <font>
+     <face></face>
+     <size>9</size>
+     <weight>normal</weight>
+    </font>
+    <left/>
+    <top/>
+    <string>Hello</string>
+   </label>
+  </detail>
+ </section>
+</report>
