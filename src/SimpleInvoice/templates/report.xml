@@ -3,7 +3,7 @@
  <title>Simple Invoice</title>
  <name>Simple Invoice by Muhammad Bashir Al-Noimi</name>
  <description></description>
- <parameter type="string" active="true" name="invoice_id" default="1" listtype="static">
+ <parameter listtype="static" active="true" default="1" type="string" name="invoice_id">
   <description></description>
  </parameter>
  <grid>
@@ -64,12 +64,14 @@ data.id = &lt;? value("invoice_id") ?></sql>
    <key>
     <query>invoice</query>
    </key>
-   <height>580</height>
+   <height>500</height>
    <rect>
     <x>10</x>
     <y>365</y>
     <width>290</width>
-    <height>190</height>
+    <height>125</height>
+    <weight>1</weight>
+    <borderwidth>1</borderwidth>
    </rect>
    <field>
     <rect>
@@ -159,10 +161,10 @@ data.id = &lt;? value("invoice_id") ?></sql>
    </label>
    <field>
     <rect>
-     <x>30</x>
+     <x>15</x>
      <y>205</y>
-     <width>765</width>
-     <height>120</height>
+     <width>760</width>
+     <height>105</height>
     </rect>
     <font>
      <face>Tahoma</face>
@@ -181,7 +183,7 @@ data.id = &lt;? value("invoice_id") ?></sql>
      <x>20</x>
      <y>375</y>
      <width>275</width>
-     <height>170</height>
+     <height>105</height>
     </rect>
     <font>
      <face>Tahoma</face>
@@ -251,7 +253,7 @@ data.id = &lt;? value("invoice_id") ?></sql>
      <x>320</x>
      <y>360</y>
      <width>450</width>
-     <height>195</height>
+     <height>110</height>
     </rect>
     <font>
      <face>Tahoma</face>
