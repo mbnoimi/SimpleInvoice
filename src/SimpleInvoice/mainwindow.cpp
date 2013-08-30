@@ -40,6 +40,9 @@ void MainWindow::changeEvent(QEvent *e)
 void MainWindow::on_actionNew_triggered()
 {
     DialogNew dlg(_db, 1, this);
+#if defined(Q_OS_ANDROID)
+    dlg.showFullScreen();
+#endif
     dlg.exec();
     updateData();
 }
@@ -50,6 +53,9 @@ void MainWindow::on_actionOpen_triggered()
                   0,
                   this,
                   model->record(ui->tableView->currentIndex().row()).value("id").toInt());
+#if defined(Q_OS_ANDROID)
+    dlg.showFullScreen();
+#endif
     dlg.exec();
     updateData();
 }
@@ -57,6 +63,9 @@ void MainWindow::on_actionOpen_triggered()
 void MainWindow::on_actionSettings_triggered()
 {
     DialogSettings dlg;
+#if defined(Q_OS_ANDROID)
+    dlg.showFullScreen();
+#endif
     dlg.exec();
 }
 
@@ -71,6 +80,11 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::on_actionAbout_triggered()
 {
     DialogAbout dlg;
+#if defined(Q_OS_ANDROID)
+    dlg.setMinimumSize(0, 0);
+    dlg.setMaximumSize(16777215, 16777215);
+    dlg.showFullScreen();
+#endif
     dlg.exec();
 }
 
@@ -96,10 +110,17 @@ bool MainWindow::isOpen()
 
 QString MainWindow::dbPath()
 {
+#if defined(Q_OS_ANDROID)
+    return QString("%1%2%3")
+            .arg(QStandardPaths::writableLocation(QStandardPaths::HomeLocation))\
+            .arg(QDir::separator())
+            .arg("database.db");
+#else
     return QString("%1%2%3")
             .arg(qApp->applicationDirPath())\
             .arg(QDir::separator())
             .arg("database.db");
+#endif
 }
 
 void MainWindow::updateData()
@@ -135,6 +156,11 @@ void MainWindow::updateData()
                         .arg(query.value(0).toString())
                         .arg(settings.value("main/currency", tr("L.D.")).toString()));
     }
+}
+
+void MainWindow::forDesktopOnly()
+{
+    QMessageBox::information(this, tr("Information"), tr("This feature is avaliable under Desktop operating systems only!"));
 }
 
 void MainWindow::on_toolButton_cancel_clicked()
@@ -182,6 +208,11 @@ void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 
 void MainWindow::on_actionPrint_triggered()
 {
+#ifdef Q_OS_ANDROID
+    forDesktopOnly();
+    return;
+#endif
+#if !defined(Q_OS_ANDROID)
     int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
     if (id > 0) {
         int copies = QInputDialog::getInt(this, tr("Copies"), tr("Input number of copies"), 1);
@@ -197,11 +228,16 @@ void MainWindow::on_actionPrint_triggered()
             render.print(copies, reportFile, params);
         }
     }
-
+#endif
 }
 
 void MainWindow::on_actionSaveAsPDF_triggered()
 {
+#ifdef Q_OS_ANDROID
+    forDesktopOnly();
+    return;
+#endif
+#if !defined(Q_OS_ANDROID)
     int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
     QString pdfPath = QFileDialog::getSaveFileName(this, tr("Select PDF path..."), ".", tr("PDF (*.pdf)"));
     if (id > 0 && !pdfPath.isEmpty()) {
@@ -211,14 +247,20 @@ void MainWindow::on_actionSaveAsPDF_triggered()
         params.append("invoice_id", id);
 
         QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
-        QString reportFile = settings.value("main/report", qApp->applicationDirPath()+"/report.xml").toString();
+        QString reportFile = settings.value("main/reporkt", qApp->applicationDirPath()+"/report.xml").toString();
 
         render.printToPDF(pdfPath, reportFile, params);
     }
+#endif
 }
 
 void MainWindow::on_actionPrint_Preview_triggered()
 {
+#ifdef Q_OS_ANDROID
+    forDesktopOnly();
+    return;
+#endif
+#if !defined(Q_OS_ANDROID)
     //TODO: Activate after supporting Qt print preview
     int id = model->record(ui->tableView->currentIndex().row()).value("id").toInt();
     if (id > 0) {
@@ -233,4 +275,5 @@ void MainWindow::on_actionPrint_Preview_triggered()
 
         render.print(1, reportFile, params, 1);
     }
+#endif
 }

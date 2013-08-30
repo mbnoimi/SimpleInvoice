@@ -6,7 +6,13 @@
 
 QT       += core gui sql xml
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+!android {
+    greaterThan(QT_MAJOR_VERSION, 4): QT += printsupport
+    SOURCES += openrptrenderer.cpp
+    HEADERS  += openrptrenderer.h
+}
 
 TARGET = SimpleInvoice
 TEMPLATE = app
@@ -16,22 +22,20 @@ SOURCES += main.cpp\
     dialogabout.cpp \
     dialognew.cpp \
     dialogsettings.cpp \
-    openrptrenderer.cpp
 
 HEADERS  += mainwindow.h \
     dialogabout.h \
     queries.h \
     dialognew.h \
-    dialogsettings.h \
-    openrptrenderer.h
+    dialogsettings.h
 
 FORMS    += mainwindow.ui \
     dialogabout.ui \
     dialognew.ui \
     dialogsettings.ui
 
-unix {
-    DESTDIR = ../../bin/lin
+linux {
+    !android:DESTDIR = ../../bin/lin
     MOC_DIR = build_tmp_lin
     UI_DIR = build_tmp_lin
     OBJECTS_DIR = build_tmp_lin
@@ -43,6 +47,8 @@ win32 {
     UI_DIR = build_tmp_win
     OBJECTS_DIR = build_tmp_win
     RCC_DIR = build_tmp_win
+###### static build ######
+    QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++ -lpthread
 }
 
 RESOURCES += \
@@ -59,16 +65,16 @@ TRANSLATIONS += langs/ar.ts \
                 langs/en.ts
 
 
-###################################### OpenRPT #############################################33
-include( ../openrpt/global.pri )
+###################################### OpenRPT #############################################
 
-
-LIBS += -L../openrpt/lib -lrenderer -lcommon -lDmtx_Library
-
-win32-msvc* {
-  PRE_TARGETDEPS += ../openrpt/lib/common.lib   \
-                    ../openrpt/lib/renderer.lib
-} else {
-  PRE_TARGETDEPS += ../openrpt/lib/libcommon.a   \
-                    ../openrpt/lib/librenderer.a
+!android {
+    include( ../openrpt/global.pri )
+    LIBS += -L../openrpt/lib -lrenderer -lcommon -lDmtx_Library
+    win32-msvc* {
+      PRE_TARGETDEPS += ../openrpt/lib/common.lib   \
+                        ../openrpt/lib/renderer.lib
+    } else {
+      PRE_TARGETDEPS += ../openrpt/lib/libcommon.a   \
+                        ../openrpt/lib/librenderer.a
+    }
 }

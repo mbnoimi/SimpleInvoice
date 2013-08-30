@@ -4,14 +4,15 @@
 #include <QMainWindow>
 #include <QtWidgets>
 #include <QtSql>
+#if !defined(Q_OS_ANDROID)
 #include <openrptrenderer.h>
+#endif
 
 namespace Ui {
 class MainWindow;
 }
 
 class MainWindow : public QMainWindow
-//        , public RenderWindow
 {
     Q_OBJECT
     
@@ -55,6 +56,8 @@ private:
     bool isOpen();
     QString dbPath();
     void updateData();
+
+    void forDesktopOnly();
 };
 
 #endif // MAINWINDOW_H
