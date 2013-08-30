@@ -15,4 +15,4 @@ ui_*.h
 *.so
 *.so.*
 *.a
-bin/*
+bin
