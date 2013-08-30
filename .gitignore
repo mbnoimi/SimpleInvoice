@@ -16,3 +16,8 @@ ui_*.h
 *.so.*
 *.a
 bin
+*.apk
+*.jar
+*.rar
+*.zip
+*.gz
