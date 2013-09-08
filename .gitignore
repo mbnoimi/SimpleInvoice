@@ -21,3 +21,5 @@ bin
 *.rar
 *.zip
 *.gz
+.git
+.bzr
