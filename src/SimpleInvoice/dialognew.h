@@ -28,13 +28,15 @@ private slots:
 
     void on_pushButton_delete_clicked();
     
-private:
+public:
     Ui::DialogNew *ui;
-    QSqlDatabase _db;
-    QSqlQueryModel *_model;
-    QStringList devices, statuses, models;
-    bool _input;
-    int _id;
+
+private:
+    QSqlDatabase db_;
+    QSqlQueryModel *model_;
+    QStringList devices_, statuses_, models_;
+    bool input_;
+    int id_;
 
     void updateData();
     bool isValidDate(QDate in, QDate out);

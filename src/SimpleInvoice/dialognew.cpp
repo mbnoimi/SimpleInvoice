@@ -6,11 +6,11 @@ DialogNew::DialogNew(QSqlDatabase database, bool isForInput, QWidget *parent, in
     ui(new Ui::DialogNew)
 {
     ui->setupUi(this);
-    _db = database;
-    _model = new QSqlQueryModel;
-    _input = isForInput;
-    _id = id;
-    if (_input)
+    db_ = database;
+    model_ = new QSqlQueryModel;
+    input_ = isForInput;
+    id_ = id;
+    if (input_)
         setWindowIcon(QIcon(":/icons/res/document-new.png"));
     else
         setWindowIcon(QIcon(":/icons/res/document-open-folder.png"));
@@ -40,16 +40,16 @@ void DialogNew::updateData()
 {
     ui->comboBox_device->clear();
     ui->comboBox_status->clear();
-    _model->setQuery(query_devices, _db);
-    for (int var = 0; var < _model->rowCount(); ++var) {
-        ui->comboBox_device->addItem(_model->record(var).value(0).toString());
+    model_->setQuery(query_devices, db_);
+    for (int var = 0; var < model_->rowCount(); ++var) {
+        ui->comboBox_device->addItem(model_->record(var).value(0).toString());
     }
-    _model->setQuery(query_statues, _db);
-    for (int var = 0; var < _model->rowCount(); ++var) {
-        ui->comboBox_status->addItem(_model->record(var).value(0).toString());
+    model_->setQuery(query_statues, db_);
+    for (int var = 0; var < model_->rowCount(); ++var) {
+        ui->comboBox_status->addItem(model_->record(var).value(0).toString());
     }
 
-    if (_input) {
+    if (input_) {
         ui->lineEdit_model->clear();
         ui->lineEdit_name->clear();
         ui->lineEdit_phone->clear();
@@ -66,10 +66,20 @@ void DialogNew::updateData()
         ui->dateEdit_recived->setEnabled(1);
         ui->dateEdit_delivered->setEnabled(0);
     } else {
-        QString query = query_update_load.arg(_id);
-        QSqlQuery qQuery(_db);
+        QString query = query_update_load.arg(id_);
+        QSqlQuery qQuery(db_);
         if (!qQuery.exec(query)) {
+#if !defined(Q_OS_ANDROID)
             QMessageBox::critical(this, tr("Error!"), tr("Unable to load the data from the database!"));
+#else
+            QLabel *label;
+            foreach(const QObject *obj, parentWidget()->children()) {
+                if (obj->objectName("label_errorMessage")) {
+                    obj->setProperty("", 1);
+                    break;
+                }
+            }
+#endif
             return;
         }
         while (qQuery.next()) {
@@ -101,9 +111,9 @@ bool DialogNew::isValidDate(QDate in, QDate out)
 
 void DialogNew::on_pushButton_ok_clicked()
 {
-    if (_input) {
+    if (input_) {
         on_pushButton_add_clicked();
-        close();
+        //        close();
     } else {
         QString query = query_update.arg(ui->lineEdit_name->text())
                 .arg(ui->comboBox_device->currentText())
@@ -116,14 +126,14 @@ void DialogNew::on_pushButton_ok_clicked()
                 .arg(ui->dateEdit_delivered->date().toString("yyyy/MM/dd"))
                 .arg(ui->lineEdit_phone->text())
                 .arg(ui->comboBox_status->currentText())
-                .arg(_id);
+                .arg(id_);
         if (!ui->lineEdit_name->text().isEmpty() &&
                 isValidDate(ui->dateEdit_recived->date(), ui->dateEdit_delivered->date())) {
-            QSqlQuery qQuery(_db);
+            QSqlQuery qQuery(db_);
             if (!qQuery.exec(query)) {
                 QMessageBox::critical(this, tr("Error!"), tr("Unable to save the data to the database!"));
             }
-            close();
+            //            close();
         } else
             QMessageBox::critical(this, tr("Error!"), tr("Missing name of invalid date!"));
     }
@@ -144,7 +154,7 @@ void DialogNew::on_pushButton_add_clicked()
             .arg(ui->lineEdit_phone->text())
             .arg(ui->comboBox_status->currentText());
     if (!ui->lineEdit_name->text().isEmpty()) {
-        QSqlQuery qQuery(_db);
+        QSqlQuery qQuery(db_);
         if (!qQuery.exec(query)) {
             QMessageBox::critical(this, tr("Error!"), tr("Unable to save the data to the database!"));
         } else
@@ -155,10 +165,10 @@ void DialogNew::on_pushButton_add_clicked()
 
 void DialogNew::on_pushButton_delete_clicked()
 {
-    if (!_input) {
+    if (!input_) {
         if (QMessageBox::question(this, tr("Question"), tr("Do you want to delete this item?"), QMessageBox::Yes|QMessageBox::No) == QMessageBox::Yes) {
-            QString query = query_delete.arg(_id);
-            QSqlQuery qQuery(_db);
+            QString query = query_delete.arg(id_);
+            QSqlQuery qQuery(db_);
             if (!qQuery.exec(query)) {
                 QMessageBox::critical(this, tr("Error!"), tr("Unable to delete the item!"));
             }

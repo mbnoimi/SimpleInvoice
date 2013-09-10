@@ -13,6 +13,8 @@
         <file>res/edit-delete.png</file>
         <file>res/application-pdf.png</file>
         <file>res/document-preview.png</file>
+        <file>res/go-home.png</file>
+        <file>res/dialog-close.png</file>
     </qresource>
     <qresource prefix="/langs">
         <file>langs/ar.qm</file>

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/mbnoimi/Projects/Desktop/Simple Invoice/src/android/src/org/kde/necessitas/ministro/IMinistroCallback.aidl
+ * Original file: /media/truecrypt1/Projects/SimpleInvoice/src/android/src/org/kde/necessitas/ministro/IMinistroCallback.aidl
  */
 package org.kde.necessitas.ministro;
 public interface IMinistroCallback extends android.os.IInterface

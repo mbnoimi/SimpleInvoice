@@ -10,18 +10,6 @@
     <height>300</height>
    </rect>
   </property>
-  <property name="minimumSize">
-   <size>
-    <width>291</width>
-    <height>300</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>291</width>
-    <height>300</height>
-   </size>
-  </property>
   <property name="windowTitle">
    <string>About</string>
   </property>
@@ -42,7 +30,7 @@
      <item row="1" column="1">
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Version 1.0</string>
+        <string>Version 1.1</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -58,7 +46,7 @@
         <pixmap resource="res.qrc">:/res/res/kword.png</pixmap>
        </property>
        <property name="alignment">
-        <set>Qt::AlignCenter</set>
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
@@ -825,6 +813,10 @@ For more information on this, and how to apply and follow the GNU AGPL, see
        <widget class="QPushButton" name="pushButton">
         <property name="text">
          <string>Close</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/res/res/dialog-close.png</normaloff>:/res/res/dialog-close.png</iconset>
         </property>
        </widget>
       </item>

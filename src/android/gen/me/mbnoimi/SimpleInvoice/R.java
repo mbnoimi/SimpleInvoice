@@ -9,10 +9,10 @@ package me.mbnoimi.SimpleInvoice;
 
 public final class R {
     public static final class array {
-        public static final int bundled_in_assets=0x7f040002;
-        public static final int bundled_in_lib=0x7f040001;
-        public static final int bundled_libs=0x7f040004;
-        public static final int qt_libs=0x7f040003;
+        public static final int bundled_in_assets=0x7f040004;
+        public static final int bundled_in_lib=0x7f040003;
+        public static final int bundled_libs=0x7f040002;
+        public static final int qt_libs=0x7f040001;
         public static final int qt_sources=0x7f040000;
     }
     public static final class attr {

@@ -18,7 +18,7 @@ public:
 protected:
     void changeEvent(QEvent *e);
     
-private:
+public:
     Ui::DialogAbout *ui;
 };
 

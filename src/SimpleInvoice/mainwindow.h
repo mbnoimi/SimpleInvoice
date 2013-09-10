@@ -4,6 +4,16 @@
 #include <QMainWindow>
 #include <QtWidgets>
 #include <QtSql>
+
+#include "queries.h"
+#include "dialogabout.h"
+#include "dialognew.h"
+#include "dialogsettings.h"
+
+#include "ui_dialogabout.h"
+#include "ui_dialognew.h"
+#include "ui_dialogsettings.h"
+
 #if !defined(Q_OS_ANDROID)
 #include <openrptrenderer.h>
 #endif
@@ -46,11 +56,14 @@ private slots:
 
     void on_actionPrint_Preview_triggered();
 
+    void on_actionHome_triggered();
+
+    void on_pushButton_clicked();
+
 private:
-    Ui::MainWindow *ui;
-    QSqlDatabase _db;
-    QSqlQueryModel *model, *model_devices, *model_statues;
-    QLabel *_label;
+    QSqlDatabase db_;
+    QSqlQueryModel *model_, *model_devices_, *model_statues_;
+    QLabel *label_;
 
     void connection();
     bool isOpen();
@@ -58,6 +71,15 @@ private:
     void updateData();
 
     void forDesktopOnly();
+    void gotToMainWidget();
+
+    DialogNew *dlgNew_, *dlgOpen_;
+    DialogAbout *dlgAbout_;
+    DialogSettings *dlgSettings_;
+
+public:
+    Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H

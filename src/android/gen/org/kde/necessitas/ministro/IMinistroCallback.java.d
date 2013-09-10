@@ -1,3 +1,3 @@
-/home/mbnoimi/Projects/Desktop/Simple Invoice/src/android/gen/org/kde/necessitas/ministro/IMinistroCallback.java: \
-  /home/mbnoimi/Projects/Desktop/Simple Invoice/src/android/src/org/kde/necessitas/ministro/IMinistroCallback.aidl 
+/media/truecrypt1/Projects/SimpleInvoice/src/android/gen/org/kde/necessitas/ministro/IMinistroCallback.java: \
+  /media/truecrypt1/Projects/SimpleInvoice/src/android/src/org/kde/necessitas/ministro/IMinistroCallback.aidl 
 

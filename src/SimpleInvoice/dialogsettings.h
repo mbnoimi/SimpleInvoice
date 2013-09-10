@@ -24,8 +24,9 @@ private slots:
 
     void on_toolButton_browse_clicked();
 
-private:
+public:
     Ui::DialogSettings *ui;
+    void save();
 };
 
 #endif // DIALOGSETTINGS_H

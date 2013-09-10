@@ -32,10 +32,7 @@ void DialogSettings::changeEvent(QEvent *e)
 
 void DialogSettings::on_pushButton_close_clicked()
 {
-    QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
-    settings.setValue("main/lang", ui->comboBox_language->currentText());
-    settings.setValue("main/currency", ui->lineEdit_currency->text());
-    settings.setValue("main/report", ui->lineEdit_reportPath->text());
+    save();
     close();
 }
 
@@ -45,4 +42,12 @@ void DialogSettings::on_toolButton_browse_clicked()
     if (!filePath.isEmpty()) {
         ui->lineEdit_reportPath->setText(filePath);
     }
+}
+
+void DialogSettings::save()
+{
+    QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
+    settings.setValue("main/lang", ui->comboBox_language->currentText());
+    settings.setValue("main/currency", ui->lineEdit_currency->text());
+    settings.setValue("main/report", ui->lineEdit_reportPath->text());
 }

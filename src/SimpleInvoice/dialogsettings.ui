@@ -107,6 +107,10 @@
         <property name="text">
          <string>Close</string>
         </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/res/res/dialog-close.png</normaloff>:/res/res/dialog-close.png</iconset>
+        </property>
        </widget>
       </item>
      </layout>

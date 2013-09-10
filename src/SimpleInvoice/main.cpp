@@ -6,7 +6,9 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+#if !defined(Q_OS_ANDROID)
     a.setStyleSheet("* {font: 9pt \"Tahoma\";}");
+#endif
 
     QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
     QString language = settings.value("main/lang", QObject::tr("English")).toString();
@@ -24,22 +26,16 @@ int main(int argc, char *argv[])
 #if defined(Q_OS_ANDROID)
     QString reportFile = QStandardPaths::writableLocation(QStandardPaths::HomeLocation)+"/report.xml";
     QString databaseFile = QStandardPaths::writableLocation(QStandardPaths::HomeLocation)+"/database.db";
-    if (!QFile::exists(reportFile)) {
-        QFile::copy("assets:/report.xml", reportFile);
-        settings.setValue("main/report", reportFile);
-    }
-    if (!QFile::exists(databaseFile))
-        QFile::copy("assets:/database.db", databaseFile);
 #else
     QString reportFile = a.applicationDirPath()+"/report.xml";
     QString databaseFile = a.applicationDirPath()+"/database.db";
+#endif
     if (!QFile::exists(reportFile)) {
         QFile::copy(":/templates/templates/report.xml", reportFile);
         settings.setValue("main/report", reportFile);
     }
     if (!QFile::exists(databaseFile))
         QFile::copy(":/templates/templates/database.db", databaseFile);
-#endif
     QFile::setPermissions(reportFile,
                           QFile::WriteOwner|
                           QFile::ReadOwner|
