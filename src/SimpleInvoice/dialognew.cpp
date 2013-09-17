@@ -68,17 +68,11 @@ void DialogNew::updateData()
     } else {
         QString query = query_update_load.arg(id_);
         QSqlQuery qQuery(db_);
-        if (qQuery.exec(query)) {
-            //#if !defined(Q_OS_ANDROID)
-            //            QMessageBox::critical(this, tr("Error!"), tr("Unable to load the data from the database!"));
-            //#else
-            QLabel *label = parentWidget()->findChild<QLabel *>("label_errorMessage");
-            label->setText(tr("Unable to load the data from the database!"));
-
-            QStackedWidget *stacked = parentWidget()->findChild<QStackedWidget *>("stackedWidget");
-            stacked->setCurrentIndex(0);
+        if (!qQuery.exec(query)) {
+#if !defined(Q_OS_ANDROID)
+            QMessageBox::critical(this, tr("Error!"), tr("Unable to load the data from the database!"));
+#endif
         }
-        //#endif
         return;
         while (qQuery.next()) {
             ui->lineEdit_model->setText(qQuery.value("model").toString());
