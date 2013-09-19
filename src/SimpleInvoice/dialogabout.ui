@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>291</width>
-    <height>300</height>
+    <width>1050</width>
+    <height>1259</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -74,6 +74,22 @@
        <property name="bottomMargin">
         <number>3</number>
        </property>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>w</string>
+         </property>
+         <property name="pixmap">
+          <pixmap>../../../../Differents/LOGO/Logo_128x128_new.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
        <item>
         <widget class="QLabel" name="label_4">
          <property name="text">

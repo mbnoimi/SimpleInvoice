@@ -72,8 +72,8 @@ void DialogNew::updateData()
 #if !defined(Q_OS_ANDROID)
             QMessageBox::critical(this, tr("Error!"), tr("Unable to load the data from the database!"));
 #endif
+            return;
         }
-        return;
         while (qQuery.next()) {
             ui->lineEdit_model->setText(qQuery.value("model").toString());
             ui->lineEdit_name->setText(qQuery.value("title").toString());
@@ -123,11 +123,15 @@ void DialogNew::on_pushButton_ok_clicked()
                 isValidDate(ui->dateEdit_recived->date(), ui->dateEdit_delivered->date())) {
             QSqlQuery qQuery(db_);
             if (!qQuery.exec(query)) {
+#if !defined(Q_OS_ANDROID)
                 QMessageBox::critical(this, tr("Error!"), tr("Unable to save the data to the database!"));
+#endif
             }
             //            close();
         } else
+#if !defined(Q_OS_ANDROID)
             QMessageBox::critical(this, tr("Error!"), tr("Missing name of invalid date!"));
+#endif
     }
 
 }
@@ -148,21 +152,33 @@ void DialogNew::on_pushButton_add_clicked()
     if (!ui->lineEdit_name->text().isEmpty()) {
         QSqlQuery qQuery(db_);
         if (!qQuery.exec(query)) {
+#if !defined(Q_OS_ANDROID)
             QMessageBox::critical(this, tr("Error!"), tr("Unable to save the data to the database!"));
+#endif
         } else
             updateData();
     } else
+#if !defined(Q_OS_ANDROID)
         QMessageBox::critical(this, tr("Error!"), tr("You need to input name of the invoice at least!"));
+#endif
 }
 
 void DialogNew::on_pushButton_delete_clicked()
 {
     if (!input_) {
-        if (QMessageBox::question(this, tr("Question"), tr("Do you want to delete this item?"), QMessageBox::Yes|QMessageBox::No) == QMessageBox::Yes) {
+        int result = QMessageBox::Yes;
+#if !defined(Q_OS_ANDROID)
+        result = QMessageBox::question(this,
+                                       tr("Question"),
+                                       tr("Do you want to delete this item?"), QMessageBox::Yes|QMessageBox::No);
+#endif
+        if (result == QMessageBox::Yes) {
             QString query = query_delete.arg(id_);
             QSqlQuery qQuery(db_);
             if (!qQuery.exec(query)) {
+#if !defined(Q_OS_ANDROID)
                 QMessageBox::critical(this, tr("Error!"), tr("Unable to delete the item!"));
+#endif
             }
             close();
         }

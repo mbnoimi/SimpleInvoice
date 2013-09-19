@@ -135,6 +135,7 @@ void MainWindow::connection()
     db_ = QSqlDatabase::addDatabase("QSQLITE");
     db_.setDatabaseName(dbPath());
     if (!isOpen()) {
+        //FIXME: Don't forget to fix model issue for Android
 #if !defined(Q_OS_ANDROID)
         QMessageBox::critical(this, tr("Error!"), tr("Unable to connect to the database!") );
 #else
@@ -307,19 +308,19 @@ void MainWindow::on_actionPrint_Preview_triggered()
 {
 #if !defined(Q_OS_ANDROID)
     //TODO: Activate after supporting Qt print preview
-    int id = model_->record(ui->tableView->currentIndex().row()).value("id").toInt();
-    if (id > 0) {
+    //    int id = model_->record(ui->tableView->currentIndex().row()).value("id").toInt();
+    //    if (id > 0) {
 
-        OpenrptRenderer render(db_);
+    //        OpenrptRenderer render(db_);
 
-        ParameterList params;
-        params.append("invoice_id", id);
+    //        ParameterList params;
+    //        params.append("invoice_id", id);
 
-        QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
-        QString reportFile = settings.value("main/report", qApp->applicationDirPath()+"/report.xml").toString();
+    //        QSettings settings(QSettings::IniFormat, QSettings::UserScope, "GNU", "Simple Invoice");
+    //        QString reportFile = settings.value("main/report", qApp->applicationDirPath()+"/report.xml").toString();
 
-        render.print(1, reportFile, params, 1);
-    }
+    //        render.print(1, reportFile, params, 1);
+    //    }
 #else
     forDesktopOnly();
 #endif
