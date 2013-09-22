@@ -5,32 +5,32 @@
     <name>DialogAbout</name>
     <message>
         <location filename="../dialogabout.ui" line="14"/>
-        <location filename="../dialogabout.ui" line="62"/>
+        <location filename="../dialogabout.ui" line="108"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="26"/>
+        <location filename="../dialogabout.ui" line="66"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Simple Invoice&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="33"/>
+        <location filename="../dialogabout.ui" line="89"/>
         <source>Version 1.1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="80"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Created by:&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Muhammad Bashir Al-Noimi&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;mailtto:mbnoimi@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mbnoimi@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../dialogabout.ui" line="114"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/res/res/logo_190x48.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;Benghazi - Libya - Da&apos;awa Islamiah Building 7&lt;span style=&quot; vertical-align:super;&quot;&gt;th&lt;/span&gt; Floor&lt;/p&gt;&lt;p&gt;Phone: +218 61 908 0886&lt;/p&gt;&lt;p&gt;Fax: +218 61 908 0887&lt;/p&gt;&lt;p&gt;E-Mail: &lt;a href=&quot;mailto:mbnoimi@ecs.ly&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mbnoimi@ecs.ly&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="91"/>
+        <location filename="../dialogabout.ui" line="138"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="115"/>
+        <location filename="../dialogabout.ui" line="162"/>
         <source>                    GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
@@ -696,7 +696,7 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="815"/>
+        <location filename="../dialogabout.ui" line="862"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
@@ -815,48 +815,48 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="72"/>
-        <location filename="../dialognew.cpp" line="124"/>
-        <location filename="../dialognew.cpp" line="128"/>
-        <location filename="../dialognew.cpp" line="149"/>
-        <location filename="../dialognew.cpp" line="153"/>
+        <location filename="../dialognew.cpp" line="73"/>
+        <location filename="../dialognew.cpp" line="127"/>
+        <location filename="../dialognew.cpp" line="133"/>
+        <location filename="../dialognew.cpp" line="156"/>
         <location filename="../dialognew.cpp" line="163"/>
+        <location filename="../dialognew.cpp" line="181"/>
         <source>Error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="72"/>
+        <location filename="../dialognew.cpp" line="73"/>
         <source>Unable to load the data from the database!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="124"/>
-        <location filename="../dialognew.cpp" line="149"/>
+        <location filename="../dialognew.cpp" line="127"/>
+        <location filename="../dialognew.cpp" line="156"/>
         <source>Unable to save the data to the database!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="128"/>
+        <location filename="../dialognew.cpp" line="133"/>
         <source>Missing name of invalid date!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="153"/>
+        <location filename="../dialognew.cpp" line="163"/>
         <source>You need to input name of the invoice at least!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="159"/>
+        <location filename="../dialognew.cpp" line="173"/>
         <source>Question</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="159"/>
+        <location filename="../dialognew.cpp" line="174"/>
         <source>Do you want to delete this item?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialognew.cpp" line="163"/>
+        <location filename="../dialognew.cpp" line="181"/>
         <source>Unable to delete the item!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -924,230 +924,236 @@ For more information on this, and how to apply and follow the GNU AGPL, see
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="78"/>
+        <location filename="../mainwindow.ui" line="82"/>
         <source>Filters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="109"/>
+        <location filename="../mainwindow.ui" line="134"/>
         <source>&amp;Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="115"/>
+        <location filename="../mainwindow.ui" line="140"/>
         <source>Type a name...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="123"/>
+        <location filename="../mainwindow.ui" line="148"/>
         <source>&amp;ID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="137"/>
+        <location filename="../mainwindow.ui" line="162"/>
         <source>Da&amp;te</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="143"/>
+        <location filename="../mainwindow.ui" line="168"/>
         <source>yyyy/MM/dd</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="158"/>
+        <location filename="../mainwindow.ui" line="183"/>
         <source>&amp;Device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="168"/>
+        <location filename="../mainwindow.ui" line="193"/>
         <source>&amp;Status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="196"/>
-        <location filename="../mainwindow.ui" line="213"/>
+        <location filename="../mainwindow.ui" line="221"/>
+        <location filename="../mainwindow.ui" line="238"/>
         <source>...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="243"/>
-        <source>File</source>
+        <location filename="../mainwindow.ui" line="267"/>
+        <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="258"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="294"/>
-        <source>New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="297"/>
-        <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="306"/>
-        <source>Open</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="309"/>
-        <source>Ctrl+O</source>
+        <location filename="../mainwindow.ui" line="295"/>
+        <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="318"/>
-        <location filename="../mainwindow.ui" line="321"/>
-        <source>Exit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="324"/>
-        <source>Ctrl+Q</source>
+        <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="333"/>
-        <location filename="../mainwindow.ui" line="336"/>
-        <source>Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="345"/>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="354"/>
-        <source>Print</source>
+        <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="375"/>
-        <source>Print Preview</source>
+        <source>New</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="378"/>
-        <source>Meta+Alt+P</source>
+        <source>Ctrl+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="387"/>
-        <source>Home</source>
+        <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="390"/>
+        <source>Ctrl+O</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="399"/>
+        <location filename="../mainwindow.ui" line="402"/>
+        <source>Exit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="405"/>
+        <source>Ctrl+Q</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="414"/>
+        <location filename="../mainwindow.ui" line="417"/>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="426"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="435"/>
+        <source>Print</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="456"/>
+        <source>Print Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="459"/>
+        <source>Meta+Alt+P</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="468"/>
+        <source>Home</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="471"/>
         <source>Ctrl+H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="357"/>
+        <location filename="../mainwindow.ui" line="438"/>
         <source>Ctrl+P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="366"/>
+        <location filename="../mainwindow.ui" line="447"/>
         <source>Save As PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="130"/>
+        <location filename="../mainwindow.cpp" line="144"/>
         <source>Error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="130"/>
+        <location filename="../mainwindow.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="146"/>
         <source>Unable to connect to the database!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="165"/>
+        <location filename="../mainwindow.cpp" line="183"/>
         <source>ID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="166"/>
+        <location filename="../mainwindow.cpp" line="184"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="167"/>
+        <location filename="../mainwindow.cpp" line="185"/>
         <source>Device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="168"/>
+        <location filename="../mainwindow.cpp" line="186"/>
         <source>Description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="187"/>
         <source>Cost</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="170"/>
+        <location filename="../mainwindow.cpp" line="188"/>
         <source>Recived</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="189"/>
         <source>Status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="172"/>
+        <location filename="../mainwindow.cpp" line="190"/>
         <source>Note</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="188"/>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>%1 : Item(s) | Sum = %2 %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>L.D.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
-        <source>Information</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="215"/>
         <source>This feature is avaliable under Desktop operating systems only!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="240"/>
+        <location filename="../mainwindow.cpp" line="259"/>
         <source>%1 : Item(s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="257"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Copies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="257"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Input number of copies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Select PDF path...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>PDF (*.pdf)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1194,8 +1200,8 @@ The root node is not &apos;report&apos;.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="12"/>
-        <location filename="../main.cpp" line="15"/>
+        <location filename="../main.cpp" line="14"/>
+        <location filename="../main.cpp" line="17"/>
         <source>English</source>
         <translation type="unfinished"></translation>
     </message>

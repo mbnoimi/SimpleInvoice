@@ -15,6 +15,9 @@
         <file>res/document-preview.png</file>
         <file>res/go-home.png</file>
         <file>res/dialog-close.png</file>
+        <file>res/logo_128x128_new.png</file>
+        <file>res/logo_190x48.png</file>
+        <file>res/logo_200x200_new.png</file>
     </qresource>
     <qresource prefix="/langs">
         <file>langs/ar.qm</file>

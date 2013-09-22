@@ -21,6 +21,8 @@ MainWindow::MainWindow(QWidget* parent) :
     dlgSettings_ = 0;
 
     on_actionHome_triggered();
+    ui->groupBox_filters->toggled(0);
+    ui->groupBox_filters->setChecked(0);
 
     connection();
 
@@ -31,6 +33,10 @@ MainWindow::MainWindow(QWidget* parent) :
     ui->actionPrint_Preview->setVisible(0);
     ui->actionSaveAsPDF->setVisible(0);
     ui->mainToolBar->setIconSize(QSize(32, 32));
+    ui->toolButton_apply->setIconSize(QSize(32, 32));
+    ui->toolButton_apply->setMinimumWidth(48);
+    ui->toolButton_cancel->setIconSize(QSize(32, 32));
+    ui->toolButton_cancel->setMinimumWidth(48);
 #endif
 }
 
@@ -64,7 +70,6 @@ void MainWindow::on_actionNew_triggered()
         dlgNew_->ui->pushButton_cancel->setHidden(1);
         dlgNew_->ui->pushButton_ok->setHidden(1);
         dlgNew_->ui->line->setHidden(1);
-        qDebug() << ui->stackedWidget->count();
     }
 #endif
     updateData();
@@ -72,24 +77,21 @@ void MainWindow::on_actionNew_triggered()
 
 void MainWindow::on_actionOpen_triggered()
 {
+    int row = model_->record(ui->tableView->currentIndex().row()).value("id").toInt();
+    if (row > -1) {
 #if !defined(Q_OS_ANDROID)
-    dlgOpen_ = new DialogNew(db_,
-                             0,
-                             this,
-                             model_->record(ui->tableView->currentIndex().row()).value("id").toInt());
-    dlgOpen_->exec();
+        dlgOpen_ = new DialogNew(db_, 0, this, row);
+        dlgOpen_->exec();
 #else
-    if (! dlgOpen_) {
-        dlgOpen_ = new DialogNew(db_,
-                                 0,
-                                 0,
-                                 model_->record(ui->tableView->currentIndex().row()).value("id").toInt());
-        ui->stackedWidget->addWidget(dlgOpen_);
-        ui->stackedWidget->setCurrentWidget(dlgOpen_);
-        dlgOpen_->ui->pushButton_cancel->setHidden(1);
-    }
+        if (! dlgOpen_) {
+            dlgOpen_ = new DialogNew(db_, 0, 0, row);
+            ui->stackedWidget->addWidget(dlgOpen_);
+            ui->stackedWidget->setCurrentWidget(dlgOpen_);
+            dlgOpen_->ui->pushButton_cancel->setHidden(1);
+        }
 #endif
-    updateData();
+        updateData();
+    }
 }
 
 void MainWindow::on_actionSettings_triggered()
@@ -126,6 +128,8 @@ void MainWindow::on_actionAbout_triggered()
         ui->stackedWidget->addWidget(dlgAbout_);
         ui->stackedWidget->setCurrentWidget(dlgAbout_);
         dlgAbout_->ui->pushButton->setHidden(1);
+        dlgAbout_->ui->verticalLayout->setMargin(0);
+        dlgAbout_->ui->widget_title->setHidden(1);
     }
 #endif
 }
@@ -350,6 +354,7 @@ void MainWindow::on_actionHome_triggered()
     }
 
     ui->stackedWidget->setCurrentWidget(ui->page_main);
+    updateData();
 }
 
 void MainWindow::on_pushButton_clicked()

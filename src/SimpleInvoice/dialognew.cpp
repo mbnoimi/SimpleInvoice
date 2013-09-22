@@ -127,14 +127,14 @@ void DialogNew::on_pushButton_ok_clicked()
                 QMessageBox::critical(this, tr("Error!"), tr("Unable to save the data to the database!"));
 #endif
             }
-            //            close();
-        } else
+        }
 #if !defined(Q_OS_ANDROID)
+        else
             QMessageBox::critical(this, tr("Error!"), tr("Missing name of invalid date!"));
 #endif
     }
-
 }
+
 
 void DialogNew::on_pushButton_add_clicked()
 {
@@ -157,8 +157,9 @@ void DialogNew::on_pushButton_add_clicked()
 #endif
         } else
             updateData();
-    } else
+    }
 #if !defined(Q_OS_ANDROID)
+    else
         QMessageBox::critical(this, tr("Error!"), tr("You need to input name of the invoice at least!"));
 #endif
 }
